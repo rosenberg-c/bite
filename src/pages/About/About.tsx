@@ -1,0 +1,45 @@
+import ButtonLink from "../../components/ButtonLink/ButtonLink";
+import PageHeader from "../../components/PageHeader/PageHeader";
+import PhotoPlaceholder from "../../components/PhotoPlaceholder/PhotoPlaceholder";
+import { aboutCopy } from "../../content/site";
+import "./About.css";
+
+export default function About() {
+  return (
+    <div className="about-page">
+      <PageHeader eyebrow={aboutCopy.eyebrow} title={aboutCopy.title} lead={aboutCopy.lead} />
+
+      <div className="about-page__content">
+        <PhotoPlaceholder
+          className="about-page__photo"
+          label={aboutCopy.photoLabel}
+          variant="interior"
+        />
+
+        <div className="about-page__story">
+          {aboutCopy.paragraphs.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+          <ButtonLink to="/menu" variant="quiet">
+            {aboutCopy.menuCta}
+          </ButtonLink>
+        </div>
+      </div>
+
+      <section className="about-page__values" aria-labelledby="about-values-title">
+        <div className="about-page__values-inner">
+          <h2 id="about-values-title">{aboutCopy.valuesTitle}</h2>
+          <div className="about-page__values-grid">
+            {aboutCopy.values.map((value, index) => (
+              <article className="about-page__value" key={value.title}>
+                <span aria-hidden="true">0{index + 1}</span>
+                <h3>{value.title}</h3>
+                <p>{value.body}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

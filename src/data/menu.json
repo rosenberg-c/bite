@@ -1,0 +1,30 @@
+[
+  {
+    "id": "butter-croissant",
+    "name": "Butter Croissant",
+    "description": "Flaky, buttery, freshly baked",
+    "priceSEK": 35,
+    "category": "Pastries"
+  },
+  {
+    "id": "cinnamon-bit",
+    "name": "Cinnamon Bit",
+    "description": "Soft bun with cinnamon sugar",
+    "priceSEK": 39,
+    "category": "Pastries"
+  },
+  {
+    "id": "chocolate-chunk-cookie",
+    "name": "Chocolate Chunk Cookie",
+    "description": "Soft center, crispy edges",
+    "priceSEK": 29,
+    "category": "Cookies"
+  },
+  {
+    "id": "iced-vanilla-latte",
+    "name": "Iced Vanilla Latte",
+    "description": "Espresso, milk, vanilla, ice",
+    "priceSEK": 49,
+    "category": "Drinks"
+  }
+]

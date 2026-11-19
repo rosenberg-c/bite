@@ -1,0 +1,16 @@
+import ButtonLink from "../../components/ButtonLink/ButtonLink";
+import { notFoundCopy } from "../../content/site";
+import "./NotFound.css";
+
+export default function NotFound() {
+  return (
+    <section className="not-found" aria-labelledby="not-found-title">
+      <p className="not-found__eyebrow">{notFoundCopy.eyebrow}</p>
+      <h1 id="not-found-title" className="not-found__title">
+        {notFoundCopy.title}
+      </h1>
+      <p className="not-found__body">{notFoundCopy.body}</p>
+      <ButtonLink to="/">{notFoundCopy.cta}</ButtonLink>
+    </section>
+  );
+}
