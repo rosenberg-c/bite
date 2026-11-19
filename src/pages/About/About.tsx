@@ -34,9 +34,8 @@ export default function About() {
         <div className="about-page__values-inner">
           <h2 id="about-values-title">{aboutCopy.valuesTitle}</h2>
           <div className="about-page__values-grid">
-            {aboutCopy.values.map((value, index) => (
+            {aboutCopy.values.map((value) => (
               <article className="about-page__value" key={value.title}>
-                <span aria-hidden="true">0{index + 1}</span>
                 <h3>{value.title}</h3>
                 <p>{value.body}</p>
               </article>
