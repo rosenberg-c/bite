@@ -1,6 +1,6 @@
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import PageHeader from "../../components/PageHeader/PageHeader";
-import PhotoPlaceholder from "../../components/PhotoPlaceholder/PhotoPlaceholder";
+import Photo from "../../components/Photo/Photo";
 import { aboutCopy } from "../../content/site";
 import "./About.css";
 
@@ -10,11 +10,7 @@ export default function About() {
       <PageHeader eyebrow={aboutCopy.eyebrow} title={aboutCopy.title} lead={aboutCopy.lead} />
 
       <div className="about-page__content">
-        <PhotoPlaceholder
-          className="about-page__photo"
-          label={aboutCopy.photoLabel}
-          variant="interior"
-        />
+        <Photo className="about-page__photo" photoKey="interior" />
 
         <div className="about-page__story">
           {aboutCopy.paragraphs.map((paragraph) => (

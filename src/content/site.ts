@@ -44,7 +44,6 @@ export const home = {
       body: "Students, friends and families are all welcome in our café.",
     },
   ],
-  heroPhotoLabel: "Warm pastries and coffee",
 } as const;
 
 export const menuCopy = {
@@ -77,7 +76,6 @@ export const aboutCopy = {
       body: "The first warm bite, the right coffee and a reason to slow down for a moment.",
     },
   ],
-  photoLabel: "Café corner",
   menuCta: "See the menu",
 } as const;
 
@@ -89,20 +87,17 @@ export const galleryCopy = {
     {
       title: "Pastry counter",
       description: "Close-up of a fresh pastry.",
-      label: "Warm pastries",
-      variant: "pastry",
+      photoKey: "pastry",
     },
     {
       title: "Coffee break",
       description: "A cozy coffee break.",
-      label: "Specialty coffee",
-      variant: "coffee",
+      photoKey: "coffee",
     },
     {
       title: "Café corner",
       description: "A calm corner of the café.",
-      label: "Café interior",
-      variant: "interior",
+      photoKey: "interior",
     },
   ],
 } as const;

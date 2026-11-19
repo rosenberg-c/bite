@@ -17,7 +17,7 @@
 }
 
 .product-card__photo {
-  --placeholder-min-height: clamp(9.5rem, 18vw, 13rem);
+  --photo-min-height: clamp(9.5rem, 18vw, 13rem);
 
   border: 0;
   border-radius: 0;
