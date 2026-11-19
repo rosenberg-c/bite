@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router";
-import { brand, navigation } from "../../content/site";
+import { brand } from "../../content/site";
+import { navigation, paths } from "../../routes";
 import "./SiteHeader.css";
 
 export default function SiteHeader() {
@@ -11,7 +12,7 @@ export default function SiteHeader() {
       <div className="site-header__inner">
         <Link
           className="site-header__brand"
-          to="/"
+          to={paths.home}
           onClick={() => setIsOpen(false)}
         >
           <span className="site-header__wordmark">{brand.wordmark}</span>
@@ -41,7 +42,7 @@ export default function SiteHeader() {
             <NavLink
               key={to}
               to={to}
-              end={to === "/"}
+              end={to === paths.home}
               className={({ isActive }) =>
                 isActive ? "site-nav__link active" : "site-nav__link"
               }

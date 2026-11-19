@@ -1,5 +1,6 @@
 import { Link } from "react-router";
-import { brand, footerCopy, navigation } from "../../content/site";
+import { brand, footerCopy } from "../../content/site";
+import { navigation } from "../../routes";
 import "./SiteFooter.css";
 
 export default function SiteFooter() {

@@ -1,5 +1,6 @@
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import { notFoundCopy } from "../../content/site";
+import { paths } from "../../routes";
 import "./NotFound.css";
 
 export default function NotFound() {
@@ -10,7 +11,7 @@ export default function NotFound() {
         {notFoundCopy.title}
       </h1>
       <p className="not-found__body">{notFoundCopy.body}</p>
-      <ButtonLink to="/">{notFoundCopy.cta}</ButtonLink>
+      <ButtonLink to={paths.home}>{notFoundCopy.cta}</ButtonLink>
     </section>
   );
 }

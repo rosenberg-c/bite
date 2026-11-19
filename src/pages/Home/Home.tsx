@@ -1,6 +1,7 @@
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import Photo from "../../components/Photo/Photo";
 import { home } from "../../content/site";
+import { paths } from "../../routes";
 import "./Home.css";
 
 export default function Home() {
@@ -17,8 +18,8 @@ export default function Home() {
             </h1>
             <p className="home-hero__lead">{home.lead}</p>
             <div className="home-hero__actions">
-              <ButtonLink to="/menu">{home.primaryCta}</ButtonLink>
-              <ButtonLink to="/about" variant="quiet">
+              <ButtonLink to={paths.menu}>{home.primaryCta}</ButtonLink>
+              <ButtonLink to={paths.about} variant="quiet">
                 {home.secondaryCta}
               </ButtonLink>
             </div>
@@ -38,7 +39,7 @@ export default function Home() {
               <p key={paragraph}>{paragraph}</p>
             ))}
             <p className="home-story__closing">{home.closing}</p>
-            <ButtonLink to="/about" variant="quiet">
+            <ButtonLink to={paths.about} variant="quiet">
               {home.aboutCta}
             </ButtonLink>
           </div>

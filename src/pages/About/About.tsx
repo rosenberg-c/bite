@@ -2,6 +2,7 @@ import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Photo from "../../components/Photo/Photo";
 import { aboutCopy } from "../../content/site";
+import { paths } from "../../routes";
 import "./About.css";
 
 export default function About() {
@@ -20,7 +21,7 @@ export default function About() {
           {aboutCopy.paragraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
-          <ButtonLink to="/menu" variant="quiet">
+          <ButtonLink to={paths.menu} variant="quiet">
             {aboutCopy.menuCta}
           </ButtonLink>
         </div>

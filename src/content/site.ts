@@ -1,3 +1,5 @@
+import { paths } from "../routes";
+
 export const brand = {
   name: "BITE Bakery & Café",
   wordmark: "bite.",
@@ -5,14 +7,6 @@ export const brand = {
   tagline: "Little bites. Big happiness.",
   location: "Malmö, Sweden",
 } as const;
-
-export const navigation = [
-  { to: "/", label: "Home" },
-  { to: "/menu", label: "Menu" },
-  { to: "/about", label: "About" },
-  { to: "/gallery", label: "Gallery" },
-  { to: "/contact", label: "Contact" },
-] as const;
 
 export const home = {
   eyebrow: "Bakery & Café",
@@ -118,9 +112,9 @@ export const contactCopy = {
   getInTouchBody:
     "There is no contact form on this site yet. While the bakery details are being finalized, explore the menu, browse the gallery and read the story.",
   actions: [
-    { to: "/menu", label: "Explore the Menu", variant: "primary" },
-    { to: "/gallery", label: "Browse the Gallery", variant: "quiet" },
-    { to: "/about", label: "Read the Story", variant: "quiet" },
+    { to: paths.menu, label: "Explore the Menu", variant: "primary" },
+    { to: paths.gallery, label: "Browse the Gallery", variant: "quiet" },
+    { to: paths.about, label: "Read the Story", variant: "quiet" },
   ],
 } as const;
 
