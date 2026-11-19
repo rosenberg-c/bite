@@ -6,7 +6,9 @@ export default defineConfig({
   server: {
     host: true,
   },
-  fmt: {},
+  fmt: {
+    printWidth: 80,
+  },
   lint: {
     plugins: ["react", "typescript", "oxc"],
     rules: {
