@@ -1,5 +1,5 @@
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
-import PhotoPlaceholder from "../../components/PhotoPlaceholder/PhotoPlaceholder";
+import Photo from "../../components/Photo/Photo";
 import { home } from "../../content/site";
 import "./Home.css";
 
@@ -23,11 +23,7 @@ export default function Home() {
               </ButtonLink>
             </div>
           </div>
-          <PhotoPlaceholder
-            className="home-hero__photo"
-            label={home.heroPhotoLabel}
-            variant="hero"
-          />
+          <Photo className="home-hero__photo" photoKey="hero" eager />
         </div>
       </section>
 

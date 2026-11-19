@@ -9,7 +9,7 @@
 }
 
 .about-page__photo {
-  --placeholder-min-height: clamp(18rem, 36vw, 28rem);
+  --photo-min-height: clamp(18rem, 36vw, 28rem);
 
   width: 100%;
 }

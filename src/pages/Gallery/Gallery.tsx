@@ -1,5 +1,5 @@
 import PageHeader from "../../components/PageHeader/PageHeader";
-import PhotoPlaceholder from "../../components/PhotoPlaceholder/PhotoPlaceholder";
+import Photo from "../../components/Photo/Photo";
 import { galleryCopy } from "../../content/site";
 import "./Gallery.css";
 
@@ -11,7 +11,7 @@ export default function Gallery() {
       <div className="gallery-page__content">
         {galleryCopy.items.map((item) => (
           <article className="gallery-page__item" key={item.title}>
-            <PhotoPlaceholder label={item.label} variant={item.variant} />
+            <Photo photoKey={item.photoKey} />
             <div className="gallery-page__item-copy">
               <h2>{item.title}</h2>
               <p>{item.description}</p>

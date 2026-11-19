@@ -22,11 +22,11 @@
   gap: 1rem;
 }
 
-.gallery-page__item:nth-child(2) .photo-placeholder {
+.gallery-page__item:nth-child(2) .photo {
   transform: translateY(1.5rem);
 }
 
-.gallery-page__item:nth-child(3) .photo-placeholder {
+.gallery-page__item:nth-child(3) .photo {
   transform: rotate(-1.5deg);
 }
 
@@ -49,8 +49,8 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .gallery-page__item:nth-child(2) .photo-placeholder,
-  .gallery-page__item:nth-child(3) .photo-placeholder {
+  .gallery-page__item:nth-child(2) .photo,
+  .gallery-page__item:nth-child(3) .photo {
     transform: none;
   }
 }

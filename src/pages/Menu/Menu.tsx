@@ -1,17 +1,15 @@
-import {
-  type PhotoPlaceholderVariant,
-  photoPlaceholderVariants,
-} from "../../components/PhotoPlaceholder/photoPlaceholderVariants";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import ProductCard from "../../components/ProductCard/ProductCard";
+import type { PhotoKey } from "../../content/photos";
 import { menuCopy } from "../../content/site";
 import { menuItems } from "../../data/menu";
 import "./Menu.css";
 
-const categoryVariants: Partial<Record<string, PhotoPlaceholderVariant>> = {
-  Pastries: photoPlaceholderVariants.croissant,
-  Cookies: photoPlaceholderVariants.cookie,
-  Drinks: photoPlaceholderVariants.latte,
+const itemPhotoKeys: Partial<Record<string, PhotoKey>> = {
+  "butter-croissant": "croissant",
+  "cinnamon-bit": "cinnamon",
+  "chocolate-chunk-cookie": "cookie",
+  "iced-vanilla-latte": "latte",
 };
 
 const categories = [...new Set(menuItems.map((item) => item.category))];
@@ -41,7 +39,7 @@ export default function Menu() {
                   <ProductCard
                     key={item.id}
                     item={item}
-                    variant={categoryVariants[category] ?? "pastry"}
+                    photoKey={itemPhotoKeys[item.id] ?? "pastry"}
                   />
                 ))}
               </div>

@@ -1,17 +1,17 @@
+import type { PhotoKey } from "../../content/photos";
 import type { MenuItem } from "../../data/menu";
-import PhotoPlaceholder from "../PhotoPlaceholder/PhotoPlaceholder";
-import { type PhotoPlaceholderVariant } from "../PhotoPlaceholder/photoPlaceholderVariants";
+import Photo from "../Photo/Photo";
 import "./ProductCard.css";
 
 type ProductCardProps = {
   item: MenuItem;
-  variant: PhotoPlaceholderVariant;
+  photoKey: PhotoKey;
 };
 
-export default function ProductCard({ item, variant }: ProductCardProps) {
+export default function ProductCard({ item, photoKey }: ProductCardProps) {
   return (
     <article className="product-card">
-      <PhotoPlaceholder className="product-card__photo" label={item.name} variant={variant} />
+      <Photo className="product-card__photo" photoKey={photoKey} />
       <div className="product-card__body">
         <div className="product-card__meta">
           <span className="product-card__category">{item.category}</span>
