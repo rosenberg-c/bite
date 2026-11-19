@@ -1,6 +1,6 @@
 export const brand = {
-  name: "BITS Bakery & Café",
-  wordmark: "bits.",
+  name: "BITE Bakery & Café",
+  wordmark: "bite.",
   descriptor: "Bakery & Café",
   tagline: "Little bites. Big happiness.",
   location: "Malmö, Sweden",
@@ -19,11 +19,11 @@ export const home = {
   titleLines: ["Little bites.", "Big happiness."],
   lead: "Life is better with something freshly baked. Discover warm pastries, sweet treats and coffee made for your everyday moments.",
   primaryCta: "Explore Menu",
-  secondaryCta: "Meet BITS",
-  storyEyebrow: "Welcome to BITS.",
+  secondaryCta: "Meet BITE",
+  storyEyebrow: "Welcome to BITE.",
   storyTitle: "A little bakery built around everyday joy.",
   storyParagraphs: [
-    "At BITS, we believe the little things make the biggest difference. From warm cinnamon buns to perfectly brewed coffee, everything we make is crafted to brighten your day.",
+    "At BITE, we believe the little things make the biggest difference. From warm cinnamon buns to perfectly brewed coffee, everything we make is crafted to brighten your day.",
     "Whether you're stopping by for your morning coffee or treating yourself to something sweet, there's always something delicious waiting for you.",
   ],
   closing: "Fresh from our oven. Straight to your heart.",
@@ -33,7 +33,7 @@ export const home = {
   values: [
     {
       title: "Fresh favorites",
-      body: "Flaky pastries, soft cookies and familiar treats with a playful BITS twist.",
+      body: "Flaky pastries, soft cookies and familiar treats with a playful BITE twist.",
     },
     {
       title: "Everyday pauses",
@@ -55,13 +55,13 @@ export const menuCopy = {
 
 export const aboutCopy = {
   eyebrow: "Our story",
-  title: "Welcome to BITS.",
-  lead: "BITS is a small bakery and café with a simple idea: make ordinary days a little sweeter.",
+  title: "Welcome to BITE.",
+  lead: "BITE is a small bakery and café with a simple idea: make ordinary days a little sweeter.",
   paragraphs: [
     "The idea is simple: make ordinary days a little sweeter. Our counter is filled with cinnamon buns, buttery croissants, cookies and coffee that is ready when you need a pause.",
     "Our café is a warm, Scandinavian-inspired space where students can study, friends can catch up and families can share something good. Small bites can make a big difference.",
   ],
-  valuesTitle: "The BITS way",
+  valuesTitle: "The BITE way",
   values: [
     {
       title: "Craft with care",
@@ -82,7 +82,7 @@ export const aboutCopy = {
 export const galleryCopy = {
   eyebrow: "A little peek",
   title: "Gallery",
-  lead: "A look inside the BITS café: warm light, simple surfaces and plenty of small treats.",
+  lead: "A look inside the BITE café: warm light, simple surfaces and plenty of small treats.",
   items: [
     {
       title: "Pastry counter",
@@ -104,8 +104,8 @@ export const galleryCopy = {
 
 export const contactCopy = {
   eyebrow: "Say hello",
-  title: "Visit BITS",
-  lead: "BITS is a small bakery and café from Malmö, Sweden, with warm pastries, sweet treats and coffee for everyday moments.",
+  title: "Visit BITE",
+  lead: "BITE is a small bakery and café from Malmö, Sweden, with warm pastries, sweet treats and coffee for everyday moments.",
   detailsTitle: "Visit us",
   details: [
     {
