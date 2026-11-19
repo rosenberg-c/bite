@@ -1,10 +1,18 @@
 .home-hero {
   position: relative;
   overflow: hidden;
-  padding: clamp(2.5rem, 7vw, 5rem) 1.25rem clamp(3rem, 8vw, 6rem);
+  padding: clamp(2.5rem, 7vw, 5rem) var(--space-5) clamp(3rem, 8vw, 6rem);
   background:
-    radial-gradient(circle at 84% 18%, rgb(216 167 160 / 52%), transparent 34%),
-    radial-gradient(circle at 8% 82%, rgb(180 123 82 / 16%), transparent 30%);
+    radial-gradient(
+      circle at 84% 18%,
+      rgb(var(--color-dusty-pink-rgb) / 52%),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 8% 82%,
+      rgb(var(--color-caramel-rgb) / 16%),
+      transparent 30%
+    );
 }
 
 .home-hero__inner {
@@ -27,7 +35,7 @@
 }
 
 .home-hero__title {
-  margin: 0.8rem 0 1rem;
+  margin: 0.8rem 0 var(--space-4);
   font-size: clamp(3rem, 8vw, 6rem);
   letter-spacing: -0.055em;
 }
@@ -35,13 +43,13 @@
 .home-hero__lead {
   max-width: 33rem;
   font-size: clamp(1.05rem, 2vw, 1.25rem);
-  color: rgb(73 48 36 / 82%);
+  color: rgb(var(--color-espresso-rgb) / 82%);
 }
 
 .home-hero__actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: var(--space-3);
   margin-top: 1.6rem;
 }
 
@@ -51,7 +59,7 @@
 }
 
 .home-story {
-  padding: clamp(3rem, 8vw, 6rem) 1.25rem;
+  padding: clamp(3rem, 8vw, 6rem) var(--space-5);
   background: var(--color-surface);
 }
 
@@ -65,7 +73,7 @@
 
 .home-story__heading h2 {
   max-width: 28rem;
-  margin-top: 0.75rem;
+  margin-top: var(--space-3);
   font-size: clamp(2rem, 5vw, 3.25rem);
   letter-spacing: -0.035em;
 }
@@ -74,9 +82,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
+  gap: var(--space-4);
   font-size: 1.05rem;
-  color: rgb(73 48 36 / 82%);
+  color: rgb(var(--color-espresso-rgb) / 82%);
 }
 
 .home-story__closing {
@@ -86,11 +94,11 @@
 }
 
 .home-story__body .button-link {
-  margin-top: 0.5rem;
+  margin-top: var(--space-2);
 }
 
 .home-values {
-  padding: clamp(3rem, 8vw, 6rem) 1.25rem;
+  padding: clamp(3rem, 8vw, 6rem) var(--space-5);
 }
 
 .home-values__inner {
@@ -106,21 +114,21 @@
 
 .home-values__grid {
   display: grid;
-  gap: 1.25rem;
-  margin-top: 2rem;
+  gap: var(--space-5);
+  margin-top: var(--space-8);
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .home-values__card {
   padding: 1.6rem;
-  border: 1px solid rgb(73 48 36 / 10%);
+  border: 1px solid rgb(var(--color-espresso-rgb) / 10%);
   border-radius: var(--radius-card);
-  background: rgb(255 250 243 / 72%);
+  background: rgb(var(--color-surface-rgb) / 72%);
 }
 
 .home-values__number {
   display: inline-block;
-  margin-bottom: 1.5rem;
+  margin-bottom: var(--space-6);
   font-family: var(--font-heading);
   font-size: 0.8rem;
   font-weight: 800;
@@ -129,13 +137,13 @@
 }
 
 .home-values__card h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-2);
   font-size: 1.25rem;
 }
 
 .home-values__card p {
   font-size: 0.94rem;
-  color: rgb(73 48 36 / 76%);
+  color: rgb(var(--color-espresso-rgb) / 76%);
 }
 
 @media (max-width: 52rem) {

@@ -1,9 +1,9 @@
 .menu-page__note {
   display: inline-block;
   padding: 0.6rem 0.9rem;
-  border: 1px dashed rgb(180 123 82 / 45%);
+  border: 1px dashed rgb(var(--color-caramel-rgb) / 45%);
   border-radius: 0.9rem;
-  background: rgb(216 167 160 / 16%);
+  background: rgb(var(--color-dusty-pink-rgb) / 16%);
   font-size: 0.86rem;
 }
 
@@ -13,7 +13,7 @@
   gap: clamp(2.5rem, 6vw, 4rem);
   max-width: var(--shell-width);
   margin: 0 auto;
-  padding: clamp(2rem, 6vw, 4rem) 1.25rem clamp(3.5rem, 8vw, 6rem);
+  padding: clamp(2rem, 6vw, 4rem) var(--space-5) clamp(3.5rem, 8vw, 6rem);
 }
 
 .menu-page__section-heading {
@@ -21,10 +21,10 @@
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
-  gap: 0.5rem 1rem;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid rgb(73 48 36 / 14%);
+  gap: var(--space-2) var(--space-4);
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid rgb(var(--color-espresso-rgb) / 14%);
 }
 
 .menu-page__section-heading h2 {
@@ -41,7 +41,7 @@
 
 .menu-page__grid {
   display: grid;
-  gap: 1.25rem;
+  gap: var(--space-5);
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 

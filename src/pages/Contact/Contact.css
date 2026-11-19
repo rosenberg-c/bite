@@ -1,17 +1,17 @@
 .contact-page__content {
   display: grid;
   align-items: start;
-  gap: 1.5rem;
+  gap: var(--space-6);
   max-width: var(--shell-width);
   margin: 0 auto;
-  padding: clamp(2rem, 6vw, 4rem) 1.25rem clamp(3.5rem, 8vw, 6rem);
+  padding: clamp(2rem, 6vw, 4rem) var(--space-5) clamp(3.5rem, 8vw, 6rem);
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
 }
 
 .contact-page__details,
 .contact-page__aside {
   padding: clamp(1.5rem, 4vw, 2.25rem);
-  border: 1px solid rgb(73 48 36 / 10%);
+  border: 1px solid rgb(var(--color-espresso-rgb) / 10%);
   border-radius: var(--radius-card);
   background: var(--color-surface);
   box-shadow: var(--shadow-card);
@@ -23,14 +23,14 @@
 }
 
 .contact-page__list {
-  margin-top: 1.5rem;
+  margin-top: var(--space-6);
 }
 
 .contact-page__row {
   display: grid;
-  gap: 0.2rem 1rem;
-  padding: 1rem 0;
-  border-top: 1px solid rgb(73 48 36 / 12%);
+  gap: 0.2rem var(--space-4);
+  padding: var(--space-4) 0;
+  border-top: 1px solid rgb(var(--color-espresso-rgb) / 12%);
   grid-template-columns: 8rem minmax(0, 1fr);
 }
 
@@ -55,14 +55,14 @@
 
 .contact-page__row dd span {
   font-size: 0.86rem;
-  color: rgb(73 48 36 / 68%);
+  color: rgb(var(--color-espresso-rgb) / 68%);
 }
 
 .contact-page__aside {
-  border-color: rgb(180 123 82 / 28%);
+  border-color: rgb(var(--color-caramel-rgb) / 28%);
   background: linear-gradient(
     150deg,
-    rgb(216 167 160 / 28%),
+    rgb(var(--color-dusty-pink-rgb) / 28%),
     var(--color-surface)
   );
 }
@@ -74,8 +74,8 @@
 .contact-page__actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.5rem;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
 }
 
 @media (max-width: 52rem) {

@@ -3,9 +3,9 @@
   align-items: center;
   justify-content: center;
   min-height: 3rem;
-  padding: 0.75rem 1.4rem;
+  padding: var(--space-3) 1.4rem;
   border: 2px solid transparent;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   font-family: var(--font-heading);
   font-size: 0.95rem;
   font-weight: 700;
@@ -30,8 +30,8 @@
 }
 
 .button-link--quiet {
-  border-color: rgb(73 48 36 / 24%);
-  background: rgb(255 250 243 / 72%);
+  border-color: rgb(var(--color-espresso-rgb) / 24%);
+  background: rgb(var(--color-surface-rgb) / 72%);
   color: var(--color-espresso);
 }
 

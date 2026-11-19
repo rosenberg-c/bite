@@ -4,7 +4,7 @@
   gap: clamp(1.5rem, 5vw, 3.5rem);
   max-width: var(--shell-width);
   margin: 0 auto;
-  padding: clamp(2rem, 6vw, 4rem) 1.25rem;
+  padding: clamp(2rem, 6vw, 4rem) var(--space-5);
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
 }
 
@@ -20,15 +20,15 @@
   align-items: flex-start;
   gap: 1.1rem;
   font-size: 1.05rem;
-  color: rgb(73 48 36 / 82%);
+  color: rgb(var(--color-espresso-rgb) / 82%);
 }
 
 .about-page__story .button-link {
-  margin-top: 0.5rem;
+  margin-top: var(--space-2);
 }
 
 .about-page__values {
-  padding: clamp(3rem, 7vw, 5rem) 1.25rem;
+  padding: clamp(3rem, 7vw, 5rem) var(--space-5);
   background: var(--color-surface);
 }
 
@@ -44,15 +44,15 @@
 
 .about-page__values-grid {
   display: grid;
-  gap: 1.25rem;
-  margin-top: 2rem;
+  gap: var(--space-5);
+  margin-top: var(--space-8);
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .about-page__value {
-  padding: 1.5rem;
+  padding: var(--space-6);
   border-top: 3px solid var(--color-dusty-pink);
-  background: rgb(247 239 227 / 62%);
+  background: rgb(var(--color-cream-rgb) / 62%);
 }
 
 .about-page__value > span {
@@ -63,13 +63,13 @@
 }
 
 .about-page__value h3 {
-  margin: 1rem 0 0.5rem;
+  margin: var(--space-4) 0 var(--space-2);
   font-size: 1.2rem;
 }
 
 .about-page__value p {
   font-size: 0.94rem;
-  color: rgb(73 48 36 / 76%);
+  color: rgb(var(--color-espresso-rgb) / 76%);
 }
 
 @media (max-width: 52rem) {

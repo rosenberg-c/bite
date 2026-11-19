@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  border-bottom: 1px solid rgb(73 48 36 / 12%);
-  background: rgb(247 239 227 / 94%);
+  border-bottom: 1px solid rgb(var(--color-espresso-rgb) / 12%);
+  background: rgb(var(--color-cream-rgb) / 94%);
   backdrop-filter: blur(12px);
 }
 
@@ -11,10 +11,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.75rem 1.25rem;
+  gap: var(--space-3) var(--space-5);
   max-width: var(--shell-width);
   margin: 0 auto;
-  padding: 0.8rem 1.25rem;
+  padding: 0.8rem var(--space-5);
 }
 
 .site-header__brand {
@@ -33,7 +33,7 @@
 }
 
 .site-header__descriptor {
-  margin-top: 0.25rem;
+  margin-top: var(--space-1);
   font-size: 0.58rem;
   font-weight: 700;
   letter-spacing: 0.24em;
@@ -54,8 +54,8 @@
   justify-content: center;
   width: 2.75rem;
   height: 2.75rem;
-  border: 1px solid rgb(73 48 36 / 20%);
-  border-radius: 999px;
+  border: 1px solid rgb(var(--color-espresso-rgb) / 20%);
+  border-radius: var(--radius-pill);
   background: transparent;
   color: inherit;
   cursor: pointer;
@@ -108,8 +108,8 @@
 }
 
 .site-nav__link {
-  padding: 0.5rem 0.8rem;
-  border-radius: 999px;
+  padding: var(--space-2) 0.8rem;
+  border-radius: var(--radius-pill);
   font-size: 0.92rem;
   font-weight: 600;
   text-decoration: none;
@@ -117,7 +117,7 @@
 }
 
 .site-nav__link:hover {
-  background: rgb(216 167 160 / 26%);
+  background: rgb(var(--color-dusty-pink-rgb) / 26%);
 }
 
 .site-nav__link.active {
@@ -135,9 +135,9 @@
     flex-basis: 100%;
     flex-direction: column;
     align-items: stretch;
-    gap: 0.25rem;
-    padding-top: 0.75rem;
-    border-top: 1px solid rgb(73 48 36 / 12%);
+    gap: var(--space-1);
+    padding-top: var(--space-3);
+    border-top: 1px solid rgb(var(--color-espresso-rgb) / 12%);
   }
 
   .site-nav[data-open="true"] {
