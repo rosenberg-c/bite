@@ -6,7 +6,11 @@ import "./Gallery.css";
 export default function Gallery() {
   return (
     <div className="gallery-page">
-      <PageHeader eyebrow={galleryCopy.eyebrow} title={galleryCopy.title} lead={galleryCopy.lead} />
+      <PageHeader
+        eyebrow={galleryCopy.eyebrow}
+        title={galleryCopy.title}
+        lead={galleryCopy.lead}
+      />
 
       <div className="gallery-page__content">
         {galleryCopy.items.map((item) => (

@@ -7,13 +7,24 @@ type PhotoProps = {
   eager?: boolean;
 };
 
-export default function Photo({ photoKey, className, eager = false }: PhotoProps) {
+export default function Photo({
+  photoKey,
+  className,
+  eager = false,
+}: PhotoProps) {
   const photo = photos[photoKey];
-  const classes = ["photo", `photo--${photoKey}`, className].filter(Boolean).join(" ");
+  const classes = ["photo", `photo--${photoKey}`, className]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <figure className={classes}>
-      <img src={photo.src} alt={photo.alt} loading={eager ? "eager" : "lazy"} decoding="async" />
+      <img
+        src={photo.src}
+        alt={photo.alt}
+        loading={eager ? "eager" : "lazy"}
+        decoding="async"
+      />
     </figure>
   );
 }

@@ -9,7 +9,11 @@ export default function SiteHeader() {
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <Link className="site-header__brand" to="/" onClick={() => setIsOpen(false)}>
+        <Link
+          className="site-header__brand"
+          to="/"
+          onClick={() => setIsOpen(false)}
+        >
           <span className="site-header__wordmark">{brand.wordmark}</span>
           <span className="site-header__descriptor">{brand.descriptor}</span>
         </Link>
@@ -38,7 +42,9 @@ export default function SiteHeader() {
               key={to}
               to={to}
               end={to === "/"}
-              className={({ isActive }) => (isActive ? "site-nav__link active" : "site-nav__link")}
+              className={({ isActive }) =>
+                isActive ? "site-nav__link active" : "site-nav__link"
+              }
               onClick={() => setIsOpen(false)}
             >
               {label}

@@ -8,7 +8,12 @@ type PageHeaderProps = {
   children?: ReactNode;
 };
 
-export default function PageHeader({ eyebrow, title, lead, children }: PageHeaderProps) {
+export default function PageHeader({
+  eyebrow,
+  title,
+  lead,
+  children,
+}: PageHeaderProps) {
   return (
     <header className="page-header">
       <div className="page-header__inner">

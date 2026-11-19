@@ -60,7 +60,11 @@
 
 .contact-page__aside {
   border-color: rgb(180 123 82 / 28%);
-  background: linear-gradient(150deg, rgb(216 167 160 / 28%), var(--color-surface));
+  background: linear-gradient(
+    150deg,
+    rgb(216 167 160 / 28%),
+    var(--color-surface)
+  );
 }
 
 .contact-page__aside > p {

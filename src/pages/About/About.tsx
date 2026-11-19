@@ -7,7 +7,11 @@ import "./About.css";
 export default function About() {
   return (
     <div className="about-page">
-      <PageHeader eyebrow={aboutCopy.eyebrow} title={aboutCopy.title} lead={aboutCopy.lead} />
+      <PageHeader
+        eyebrow={aboutCopy.eyebrow}
+        title={aboutCopy.title}
+        lead={aboutCopy.lead}
+      />
 
       <div className="about-page__content">
         <Photo className="about-page__photo" photoKey="interior" />
@@ -22,7 +26,10 @@ export default function About() {
         </div>
       </div>
 
-      <section className="about-page__values" aria-labelledby="about-values-title">
+      <section
+        className="about-page__values"
+        aria-labelledby="about-values-title"
+      >
         <div className="about-page__values-inner">
           <h2 id="about-values-title">{aboutCopy.valuesTitle}</h2>
           <div className="about-page__values-grid">

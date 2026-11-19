@@ -17,7 +17,11 @@ const categories = [...new Set(menuItems.map((item) => item.category))];
 export default function Menu() {
   return (
     <div className="menu-page">
-      <PageHeader eyebrow={menuCopy.eyebrow} title={menuCopy.title} lead={menuCopy.lead}>
+      <PageHeader
+        eyebrow={menuCopy.eyebrow}
+        title={menuCopy.title}
+        lead={menuCopy.lead}
+      >
         <p className="menu-page__note">{menuCopy.note}</p>
       </PageHeader>
 
@@ -27,7 +31,11 @@ export default function Menu() {
           const headingId = `menu-${category.toLowerCase().replace(/\s+/g, "-")}`;
 
           return (
-            <section className="menu-page__section" key={category} aria-labelledby={headingId}>
+            <section
+              className="menu-page__section"
+              key={category}
+              aria-labelledby={headingId}
+            >
               <div className="menu-page__section-heading">
                 <h2 id={headingId}>{category}</h2>
                 <span>

@@ -8,7 +8,10 @@ import icedVanillaLatte from "../assets/images/iced-vanilla-latte.png";
 import pastryCounter from "../assets/images/pastry-counter.png";
 
 export const photos = {
-  hero: { src: bakeryHero, alt: "Fresh pastries and coffee at the BITS bakery" },
+  hero: {
+    src: bakeryHero,
+    alt: "Fresh pastries and coffee at the BITS bakery",
+  },
   croissant: { src: butterCroissant, alt: "Flaky butter croissant" },
   cinnamon: { src: cinnamonBit, alt: "Cinnamon bun with cinnamon sugar" },
   cookie: { src: chocolateChunkCookie, alt: "Chocolate chunk cookie" },

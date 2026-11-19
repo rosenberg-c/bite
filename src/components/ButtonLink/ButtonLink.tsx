@@ -22,7 +22,9 @@ export default function ButtonLink({
   variant = "primary",
   className,
 }: ButtonLinkProps) {
-  const classes = ["button-link", `button-link--${variant}`, className].filter(Boolean).join(" ");
+  const classes = ["button-link", `button-link--${variant}`, className]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <Link className={classes} to={to}>
