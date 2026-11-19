@@ -51,7 +51,7 @@ export const menuCopy = {
   eyebrow: "Made with love",
   title: "Our favorites",
   lead: "A small menu of the treats and drinks we love. Prices are shown in Swedish kronor.",
-  note: "Menu details live in src/data/menu.json. Edit the file to change items, descriptions, prices or categories.",
+  note: "A little something for every craving, from flaky pastries to coffee worth slowing down for.",
 } as const;
 
 export const aboutCopy = {
