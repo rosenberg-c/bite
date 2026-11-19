@@ -50,11 +50,8 @@ export default function Home() {
           <p className="home-values__eyebrow">{home.valuesEyebrow}</p>
           <h2 id="home-values-title">{home.valuesTitle}</h2>
           <div className="home-values__grid">
-            {home.values.map((value, index) => (
+            {home.values.map((value) => (
               <article className="home-values__card" key={value.title}>
-                <span className="home-values__number" aria-hidden="true">
-                  0{index + 1}
-                </span>
                 <h3>{value.title}</h3>
                 <p>{value.body}</p>
               </article>
