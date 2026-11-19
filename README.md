@@ -30,3 +30,7 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+## Agent skills
+
+The React Router skill in `.agents/skills/react-router/` comes from the [React Router repository](https://github.com/remix-run/react-router/tree/main/.agents/skills/react-router).
