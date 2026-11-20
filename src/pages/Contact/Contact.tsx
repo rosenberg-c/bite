@@ -1,9 +1,9 @@
-import ButtonLink from "../../components/ButtonLink/ButtonLink";
-import PageHeader from "../../components/PageHeader/PageHeader";
+import { ButtonLink } from "../../components/ButtonLink/ButtonLink";
+import { PageHeader } from "../../components/PageHeader/PageHeader";
 import { contactCopy } from "./Contact.content";
 import "./Contact.css";
 
-export default function Contact() {
+export const Contact = () => {
   return (
     <div className="contact-page">
       <PageHeader
@@ -52,4 +52,4 @@ export default function Contact() {
       </div>
     </div>
   );
-}
+};

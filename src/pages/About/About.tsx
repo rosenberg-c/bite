@@ -1,11 +1,11 @@
-import ButtonLink from "../../components/ButtonLink/ButtonLink";
-import PageHeader from "../../components/PageHeader/PageHeader";
-import Photo from "../../components/Photo/Photo";
+import { ButtonLink } from "../../components/ButtonLink/ButtonLink";
+import { PageHeader } from "../../components/PageHeader/PageHeader";
+import { Photo } from "../../components/Photo/Photo";
 import { aboutCopy } from "./About.content";
 import { paths } from "../../routes";
 import "./About.css";
 
-export default function About() {
+export const About = () => {
   return (
     <div className="about-page">
       <PageHeader
@@ -45,4 +45,4 @@ export default function About() {
       </section>
     </div>
   );
-}
+};

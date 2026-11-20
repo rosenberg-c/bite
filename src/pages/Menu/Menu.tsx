@@ -1,5 +1,5 @@
-import PageHeader from "../../components/PageHeader/PageHeader";
-import ProductCard from "./components/ProductCard/ProductCard";
+import { PageHeader } from "../../components/PageHeader/PageHeader";
+import { ProductCard } from "./components/ProductCard/ProductCard";
 import type { PhotoKey } from "../../content/photos";
 import { menuCopy } from "./Menu.content";
 import { menuItems } from "./data/menu";
@@ -15,7 +15,7 @@ const itemPhotoKeys: Partial<Record<string, PhotoKey>> = {
 
 const categories = [...new Set(menuItems.map((item) => item.category))];
 
-export default function Menu() {
+export const Menu = () => {
   return (
     <div className="menu-page">
       <PageHeader
@@ -51,4 +51,4 @@ export default function Menu() {
       </div>
     </div>
   );
-}
+};

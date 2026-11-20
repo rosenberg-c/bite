@@ -7,11 +7,7 @@ type PhotoProps = {
   eager?: boolean;
 };
 
-export default function Photo({
-  photoKey,
-  className,
-  eager = false,
-}: PhotoProps) {
+export const Photo = ({ photoKey, className, eager = false }: PhotoProps) => {
   const photo = photos[photoKey];
   const classes = ["photo", `photo--${photoKey}`, className]
     .filter(Boolean)
@@ -27,4 +23,4 @@ export default function Photo({
       />
     </figure>
   );
-}
+};

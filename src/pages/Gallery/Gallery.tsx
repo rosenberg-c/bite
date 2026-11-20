@@ -1,9 +1,9 @@
-import PageHeader from "../../components/PageHeader/PageHeader";
-import Photo from "../../components/Photo/Photo";
+import { PageHeader } from "../../components/PageHeader/PageHeader";
+import { Photo } from "../../components/Photo/Photo";
 import { galleryCopy } from "./Gallery.content";
 import "./Gallery.css";
 
-export default function Gallery() {
+export const Gallery = () => {
   return (
     <div className="gallery-page">
       <PageHeader
@@ -25,4 +25,4 @@ export default function Gallery() {
       </div>
     </div>
   );
-}
+};

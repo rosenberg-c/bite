@@ -1,10 +1,10 @@
 import { Outlet } from "react-router";
-import SiteFooter from "./components/SiteFooter/SiteFooter";
-import SiteHeader from "./components/SiteHeader/SiteHeader";
+import { SiteFooter } from "./components/SiteFooter/SiteFooter";
+import { SiteHeader } from "./components/SiteHeader/SiteHeader";
 import { siteLayoutCopy } from "./SiteLayout.content";
 import "./SiteLayout.css";
 
-export default function SiteLayout() {
+export const SiteLayout = () => {
   return (
     <div className="site-layout">
       <a className="site-layout__skip-link" href="#main-content">
@@ -17,4 +17,4 @@ export default function SiteLayout() {
       <SiteFooter />
     </div>
   );
-}
+};

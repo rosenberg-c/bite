@@ -1,9 +1,9 @@
-import ButtonLink from "../../components/ButtonLink/ButtonLink";
+import { ButtonLink } from "../../components/ButtonLink/ButtonLink";
 import { notFoundCopy } from "./NotFound.content";
 import { paths } from "../../routes";
 import "./NotFound.css";
 
-export default function NotFound() {
+export const NotFound = () => {
   return (
     <section className="not-found" aria-labelledby="not-found-title">
       <p className="not-found__eyebrow">{notFoundCopy.eyebrow}</p>
@@ -14,4 +14,4 @@ export default function NotFound() {
       <ButtonLink to={paths.home}>{notFoundCopy.cta}</ButtonLink>
     </section>
   );
-}
+};

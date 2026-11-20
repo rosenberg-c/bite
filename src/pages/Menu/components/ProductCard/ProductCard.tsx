@@ -1,7 +1,7 @@
 import type { PhotoKey } from "../../../../content/photos";
 import type { MenuItem } from "../../data/menu";
 import { productCardCopy } from "./ProductCard.content";
-import Photo from "../../../../components/Photo/Photo";
+import { Photo } from "../../../../components/Photo/Photo";
 import "./ProductCard.css";
 
 type ProductCardProps = {
@@ -9,7 +9,7 @@ type ProductCardProps = {
   photoKey: PhotoKey;
 };
 
-export default function ProductCard({ item, photoKey }: ProductCardProps) {
+export const ProductCard = ({ item, photoKey }: ProductCardProps) => {
   return (
     <article className="product-card">
       <Photo className="product-card__photo" photoKey={photoKey} />
@@ -25,4 +25,4 @@ export default function ProductCard({ item, photoKey }: ProductCardProps) {
       </div>
     </article>
   );
-}
+};

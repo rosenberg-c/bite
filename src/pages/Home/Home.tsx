@@ -1,10 +1,10 @@
-import ButtonLink from "../../components/ButtonLink/ButtonLink";
-import Photo from "../../components/Photo/Photo";
+import { ButtonLink } from "../../components/ButtonLink/ButtonLink";
+import { Photo } from "../../components/Photo/Photo";
 import { home } from "./Home.content";
 import { paths } from "../../routes";
 import "./Home.css";
 
-export default function Home() {
+export const Home = () => {
   return (
     <>
       <section className="home-hero" aria-labelledby="home-title">
@@ -62,4 +62,4 @@ export default function Home() {
       </section>
     </>
   );
-}
+};

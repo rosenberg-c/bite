@@ -16,12 +16,12 @@ type ButtonLinkProps = {
   className?: string;
 };
 
-export default function ButtonLink({
+export const ButtonLink = ({
   to,
   children,
   variant = "primary",
   className,
-}: ButtonLinkProps) {
+}: ButtonLinkProps) => {
   const classes = ["button-link", `button-link--${variant}`, className]
     .filter(Boolean)
     .join(" ");
@@ -31,4 +31,4 @@ export default function ButtonLink({
       {children}
     </Link>
   );
-}
+};

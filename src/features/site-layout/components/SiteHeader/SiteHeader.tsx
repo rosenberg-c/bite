@@ -7,7 +7,7 @@ import { siteHeaderCopy } from "./SiteHeader.content";
 import { useThemePreference } from "../../hooks/useTheme";
 import "./SiteHeader.css";
 
-export default function SiteHeader() {
+export const SiteHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { preference, setPreference } = useThemePreference();
 
@@ -82,4 +82,4 @@ export default function SiteHeader() {
       </div>
     </header>
   );
-}
+};

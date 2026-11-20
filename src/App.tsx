@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router";
-import About from "./pages/About/About";
-import Contact from "./pages/Contact/Contact";
-import Gallery from "./pages/Gallery/Gallery";
-import Home from "./pages/Home/Home";
-import Menu from "./pages/Menu/Menu";
-import NotFound from "./pages/NotFound/NotFound";
-import SiteLayout from "./features/site-layout/SiteLayout";
+import { About } from "./pages/About/About";
+import { Contact } from "./pages/Contact/Contact";
+import { Gallery } from "./pages/Gallery/Gallery";
+import { Home } from "./pages/Home/Home";
+import { Menu } from "./pages/Menu/Menu";
+import { NotFound } from "./pages/NotFound/NotFound";
+import { SiteLayout } from "./features/site-layout/SiteLayout";
 import { paths } from "./routes";
 
-export default function App() {
+export const App = () => {
   return (
     <Routes>
       <Route element={<SiteLayout />}>
@@ -21,4 +21,4 @@ export default function App() {
       </Route>
     </Routes>
   );
-}
+};

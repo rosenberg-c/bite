@@ -4,7 +4,7 @@ import { navigation } from "../../content/navigation";
 import { footerCopy } from "./SiteFooter.content";
 import "./SiteFooter.css";
 
-export default function SiteFooter() {
+export const SiteFooter = () => {
   return (
     <footer className="site-footer">
       <div className="site-footer__inner">
@@ -34,4 +34,4 @@ export default function SiteFooter() {
       </div>
     </footer>
   );
-}
+};

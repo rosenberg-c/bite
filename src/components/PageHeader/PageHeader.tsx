@@ -8,12 +8,12 @@ type PageHeaderProps = {
   children?: ReactNode;
 };
 
-export default function PageHeader({
+export const PageHeader = ({
   eyebrow,
   title,
   lead,
   children,
-}: PageHeaderProps) {
+}: PageHeaderProps) => {
   return (
     <header className="page-header">
       <div className="page-header__inner">
@@ -24,4 +24,4 @@ export default function PageHeader({
       </div>
     </header>
   );
-}
+};
