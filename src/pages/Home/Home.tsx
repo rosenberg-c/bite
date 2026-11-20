@@ -12,9 +12,9 @@ export default function Home() {
           <div className="home-hero__copy">
             <p className="home-hero__eyebrow">{home.eyebrow}</p>
             <h1 id="home-title" className="home-hero__title">
-              {home.titleLines[0]}
-              <br />
-              {home.titleLines[1]}
+              {home.titleLines.flatMap((line, i) =>
+                i === 0 ? [line] : [<br key={i} />, line],
+              )}
             </h1>
             <p className="home-hero__lead">{home.lead}</p>
             <div className="home-hero__actions">
