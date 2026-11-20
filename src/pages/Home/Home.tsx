@@ -1,6 +1,6 @@
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import Photo from "../../components/Photo/Photo";
-import { home } from "../../content/site";
+import { home } from "./Home.content";
 import { paths } from "../../routes";
 import "./Home.css";
 

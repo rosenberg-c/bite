@@ -1,6 +1,6 @@
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import PageHeader from "../../components/PageHeader/PageHeader";
-import { contactCopy } from "../../content/site";
+import { contactCopy } from "./Contact.content";
 import "./Contact.css";
 
 export default function Contact() {

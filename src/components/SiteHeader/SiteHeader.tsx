@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router";
 import { brand } from "../../content/site";
-import { navigation, paths } from "../../routes";
+import { navigation } from "../../content/navigation";
+import { paths } from "../../routes";
+import { siteHeaderCopy } from "./SiteHeader.content";
 import { useThemePreference } from "../../hooks/useTheme";
 import "./SiteHeader.css";
 
@@ -23,18 +25,22 @@ export default function SiteHeader() {
 
         <div className="site-header__actions">
           <label className="site-header__theme">
-            <span className="site-header__theme-label">Theme</span>
+            <span className="site-header__theme-label">
+              {siteHeaderCopy.themeLabel}
+            </span>
             <select
               className="site-header__theme-select"
               value={preference}
-              aria-label="Color theme"
+              aria-label={siteHeaderCopy.colorThemeLabel}
               onChange={(event) =>
                 setPreference(event.target.value as "system" | "light" | "dark")
               }
             >
-              <option value="system">System</option>
-              <option value="light">Light</option>
-              <option value="dark">Dark</option>
+              <option value="system">
+                {siteHeaderCopy.themeOptions.system}
+              </option>
+              <option value="light">{siteHeaderCopy.themeOptions.light}</option>
+              <option value="dark">{siteHeaderCopy.themeOptions.dark}</option>
             </select>
           </label>
           <button
@@ -42,7 +48,11 @@ export default function SiteHeader() {
             className="site-header__toggle"
             aria-expanded={isOpen}
             aria-controls="primary-navigation"
-            aria-label={isOpen ? "Close navigation" : "Open navigation"}
+            aria-label={
+              isOpen
+                ? siteHeaderCopy.navigationToggle.close
+                : siteHeaderCopy.navigationToggle.open
+            }
             onClick={() => setIsOpen((open) => !open)}
           >
             <span className="site-header__toggle-bars" aria-hidden="true" />
@@ -52,7 +62,7 @@ export default function SiteHeader() {
         <nav
           id="primary-navigation"
           className="site-nav"
-          aria-label="Main navigation"
+          aria-label={siteHeaderCopy.mainNavigationLabel}
           data-open={isOpen}
         >
           {navigation.map(({ to, label }) => (

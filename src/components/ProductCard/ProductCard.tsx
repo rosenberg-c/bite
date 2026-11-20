@@ -1,5 +1,6 @@
 import type { PhotoKey } from "../../content/photos";
 import type { MenuItem } from "../../data/menu";
+import { productCardCopy } from "./ProductCard.content";
 import Photo from "../Photo/Photo";
 import "./ProductCard.css";
 
@@ -15,7 +16,9 @@ export default function ProductCard({ item, photoKey }: ProductCardProps) {
       <div className="product-card__body">
         <div className="product-card__meta">
           <span className="product-card__category">{item.category}</span>
-          <span className="product-card__price">{item.priceSEK} SEK</span>
+          <span className="product-card__price">
+            {item.priceSEK} {productCardCopy.priceSuffix}
+          </span>
         </div>
         <h3 className="product-card__name">{item.name}</h3>
         <p className="product-card__description">{item.description}</p>

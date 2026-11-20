@@ -1,6 +1,6 @@
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Photo from "../../components/Photo/Photo";
-import { galleryCopy } from "../../content/site";
+import { galleryCopy } from "./Gallery.content";
 import "./Gallery.css";
 
 export default function Gallery() {

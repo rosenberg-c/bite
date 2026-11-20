@@ -1,7 +1,7 @@
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import PageHeader from "../../components/PageHeader/PageHeader";
 import Photo from "../../components/Photo/Photo";
-import { aboutCopy } from "../../content/site";
+import { aboutCopy } from "./About.content";
 import { paths } from "../../routes";
 import "./About.css";
 

@@ -1,5 +1,5 @@
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
-import { notFoundCopy } from "../../content/site";
+import { notFoundCopy } from "./NotFound.content";
 import { paths } from "../../routes";
 import "./NotFound.css";
 

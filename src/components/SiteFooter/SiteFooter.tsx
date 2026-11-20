@@ -1,6 +1,7 @@
 import { Link } from "react-router";
-import { brand, footerCopy } from "../../content/site";
-import { navigation } from "../../routes";
+import { brand } from "../../content/site";
+import { navigation } from "../../content/navigation";
+import { footerCopy } from "./SiteFooter.content";
 import "./SiteFooter.css";
 
 export default function SiteFooter() {
@@ -12,7 +13,10 @@ export default function SiteFooter() {
           <p>{brand.tagline}</p>
         </div>
 
-        <nav className="site-footer__nav" aria-label="Footer navigation">
+        <nav
+          className="site-footer__nav"
+          aria-label={footerCopy.navigationLabel}
+        >
           <p className="site-footer__nav-title">{footerCopy.explore}</p>
           <ul>
             {navigation.map(({ to, label }) => (
