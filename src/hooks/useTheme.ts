@@ -16,10 +16,14 @@ export function useThemePreference() {
   useEffect(() => {
     applyTheme(preference);
 
-    if (preference !== "system") return;
+    if (preference !== "system") {
+      return;
+    }
 
     const media = getSystemThemeMedia();
-    if (!media) return;
+    if (!media) {
+      return;
+    }
 
     const handleChange = () => applyTheme("system");
     if (typeof media.addEventListener === "function") {

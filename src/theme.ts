@@ -34,8 +34,12 @@ export function getSystemThemeMedia(): MediaQueryList | null {
 }
 
 export function resolveTheme(preference: ThemePreference): "light" | "dark" {
-  if (preference === "light") return "light";
-  if (preference === "dark") return "dark";
+  if (preference === "light") {
+    return "light";
+  }
+  if (preference === "dark") {
+    return "dark";
+  }
   return getSystemThemeMedia()?.matches ? "dark" : "light";
 }
 
