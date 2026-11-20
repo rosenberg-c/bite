@@ -1,0 +1,19 @@
+.contact-page__aside {
+  border-color: rgb(var(--color-caramel-rgb) / 28%);
+  background: linear-gradient(
+    150deg,
+    rgb(var(--color-dusty-pink-rgb) / 28%),
+    var(--color-surface)
+  );
+}
+
+.contact-page__aside > p {
+  margin-top: 0.8rem;
+}
+
+.contact-page__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}

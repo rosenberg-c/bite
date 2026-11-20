@@ -22,70 +22,8 @@
   font-size: clamp(1.6rem, 4vw, 2.25rem);
 }
 
-.contact-page__list {
-  margin-top: var(--space-6);
-}
-
-.contact-page__row {
-  display: grid;
-  gap: 0.2rem var(--space-4);
-  padding: var(--space-4) 0;
-  border-top: 1px solid rgb(var(--color-espresso-rgb) / 12%);
-  grid-template-columns: 8rem minmax(0, 1fr);
-}
-
-.contact-page__row dt {
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-caramel);
-}
-
-.contact-page__row dd {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-}
-
-.contact-page__row dd strong {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-}
-
-.contact-page__row dd span {
-  font-size: 0.86rem;
-  color: rgb(var(--color-espresso-rgb) / 68%);
-}
-
-.contact-page__aside {
-  border-color: rgb(var(--color-caramel-rgb) / 28%);
-  background: linear-gradient(
-    150deg,
-    rgb(var(--color-dusty-pink-rgb) / 28%),
-    var(--color-surface)
-  );
-}
-
-.contact-page__aside > p {
-  margin-top: 0.8rem;
-}
-
-.contact-page__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-3);
-  margin-top: var(--space-6);
-}
-
 @media (max-width: 52rem) {
   .contact-page__content {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 30rem) {
-  .contact-page__row {
     grid-template-columns: 1fr;
   }
 }
