@@ -20,6 +20,7 @@ export default defineConfig({
         },
       ],
       "vite-plus/prefer-vite-plus-imports": "error",
+      curly: "error",
     },
     options: {
       typeAware: true,
