@@ -1,36 +1,24 @@
-# React + TypeScript + Vite
+# BITE Bakery & Café
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A bakery and café website for BITE in Malmö, Sweden. Browse the home, menu, about, gallery, and contact pages. The contact page does not yet include a form.
 
-Currently, two official plugins are available:
+Built with React, TypeScript, React Router, and Vite+.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Getting started
 
-## React Compiler
+Install [Vite+](https://viteplus.dev/guide/) and dependencies, then start the development server:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```sh
+vp install
+vp dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Commands
 
-## Agent skills
+```sh
+vp check       # format, lint, and type-check
+vp run build   # type-check and build for production
+vp preview     # preview the build locally
+```
 
-The React Router skill in `.agents/skills/react-router/` comes from the [React Router repository](https://github.com/remix-run/react-router/tree/main/.agents/skills/react-router).
+Menu items live in `src/data/menu.json`; page copy lives in `src/pages/*/*.content.ts`. Vercel rewrites routes to `index.html` for client-side navigation.
