@@ -4,7 +4,7 @@ export const menuCopy = {
   lead: "A small menu of the treats and drinks we love. Prices are shown in Swedish kronor.",
   note: "A little something for every craving, from flaky pastries to coffee worth slowing down for.",
   count: {
-    item: "item",
-    items: "items",
+    one: "item",
+    other: "items",
   },
 } as const;

@@ -3,6 +3,7 @@ import ProductCard from "../../components/ProductCard/ProductCard";
 import type { PhotoKey } from "../../content/photos";
 import { menuCopy } from "./Menu.content";
 import { menuItems } from "../../data/menu";
+import { formatCount } from "../../format/count/formatCount";
 import "./Menu.css";
 
 const itemPhotoKeys: Partial<Record<string, PhotoKey>> = {
@@ -34,10 +35,7 @@ export default function Menu() {
               <div className="menu-page__section-heading">
                 <h2>{category}</h2>
                 <span>
-                  {items.length}{" "}
-                  {items.length === 1
-                    ? menuCopy.count.item
-                    : menuCopy.count.items}
+                  {formatCount(items.length, menuCopy.count)}
                 </span>
               </div>
               <div className="menu-page__grid">
