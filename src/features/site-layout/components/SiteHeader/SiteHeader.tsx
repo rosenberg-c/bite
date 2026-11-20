@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router";
 import { brand } from "../../content/site";
 import { navigation } from "../../content/navigation";
-import { paths } from "../../routes";
+import { paths } from "../../../../routes";
 import { siteHeaderCopy } from "./SiteHeader.content";
 import { useThemePreference } from "../../hooks/useTheme";
 import "./SiteHeader.css";

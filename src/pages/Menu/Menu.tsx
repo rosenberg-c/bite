@@ -1,9 +1,9 @@
 import PageHeader from "../../components/PageHeader/PageHeader";
-import ProductCard from "../../components/ProductCard/ProductCard";
+import ProductCard from "./components/ProductCard/ProductCard";
 import type { PhotoKey } from "../../content/photos";
 import { menuCopy } from "./Menu.content";
-import { menuItems } from "../../data/menu";
-import { formatCount } from "../../format/count/formatCount";
+import { menuItems } from "./data/menu";
+import { formatCount } from "./utils/formatCount";
 import "./Menu.css";
 
 const itemPhotoKeys: Partial<Record<string, PhotoKey>> = {
@@ -34,9 +34,7 @@ export default function Menu() {
             <section className="menu-page__section" key={category}>
               <div className="menu-page__section-heading">
                 <h2>{category}</h2>
-                <span>
-                  {formatCount(items.length, menuCopy.count)}
-                </span>
+                <span>{formatCount(items.length, menuCopy.count)}</span>
               </div>
               <div className="menu-page__grid">
                 {items.map((item) => (

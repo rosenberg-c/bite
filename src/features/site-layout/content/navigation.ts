@@ -1,4 +1,4 @@
-import { paths } from "../routes";
+import { paths } from "../../../routes";
 
 export const navigation = [
   { to: paths.home, label: "Home" },

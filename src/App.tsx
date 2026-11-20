@@ -5,7 +5,7 @@ import Gallery from "./pages/Gallery/Gallery";
 import Home from "./pages/Home/Home";
 import Menu from "./pages/Menu/Menu";
 import NotFound from "./pages/NotFound/NotFound";
-import SiteLayout from "./components/SiteLayout/SiteLayout";
+import SiteLayout from "./features/site-layout/SiteLayout";
 import { paths } from "./routes";
 
 export default function App() {

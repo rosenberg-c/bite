@@ -1,7 +1,7 @@
-import type { PhotoKey } from "../../content/photos";
+import type { PhotoKey } from "../../../../content/photos";
 import type { MenuItem } from "../../data/menu";
 import { productCardCopy } from "./ProductCard.content";
-import Photo from "../Photo/Photo";
+import Photo from "../../../../components/Photo/Photo";
 import "./ProductCard.css";
 
 type ProductCardProps = {

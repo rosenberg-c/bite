@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
-import SiteFooter from "../SiteFooter/SiteFooter";
-import SiteHeader from "../SiteHeader/SiteHeader";
+import SiteFooter from "./components/SiteFooter/SiteFooter";
+import SiteHeader from "./components/SiteHeader/SiteHeader";
 import { siteLayoutCopy } from "./SiteLayout.content";
 import "./SiteLayout.css";
 
