@@ -1,5 +1,6 @@
 import { ButtonLink } from "../../../../components/ButtonLink/ButtonLink";
 import { Photo } from "../../../../components/Photo/Photo";
+import { photos } from "../../../../content/photos";
 import { home } from "../../Home.content";
 import { paths } from "../../../../routes";
 import "./Hero.css";
@@ -23,7 +24,7 @@ export const Hero = () => {
             </ButtonLink>
           </div>
         </div>
-        <Photo className="home-hero__photo" photoKey="hero" eager />
+        <Photo className="home-hero__photo" photo={photos.hero} eager />
       </div>
     </section>
   );

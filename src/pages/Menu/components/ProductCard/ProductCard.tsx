@@ -1,4 +1,4 @@
-import type { PhotoKey } from "../../../../content/photos";
+import type { PhotoData } from "../../../../content/photos";
 import type { MenuItem } from "../../data/menu";
 import { productCardCopy } from "./ProductCard.content";
 import { Photo } from "../../../../components/Photo/Photo";
@@ -6,13 +6,13 @@ import "./ProductCard.css";
 
 type ProductCardProps = {
   item: MenuItem;
-  photoKey: PhotoKey;
+  photo: PhotoData;
 };
 
-export const ProductCard = ({ item, photoKey }: ProductCardProps) => {
+export const ProductCard = ({ item, photo }: ProductCardProps) => {
   return (
     <article className="product-card">
-      <Photo className="product-card__photo" photoKey={photoKey} />
+      <Photo className="product-card__photo" photo={photo} />
       <div className="product-card__body">
         <div className="product-card__meta">
           <span className="product-card__category">{item.category}</span>

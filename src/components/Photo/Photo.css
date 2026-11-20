@@ -26,10 +26,6 @@
   object-fit: cover;
 }
 
-.photo--hero {
-  --photo-min-height: clamp(20rem, 42vw, 32rem);
-}
-
 [data-theme="dark"] .photo {
   background:
     radial-gradient(

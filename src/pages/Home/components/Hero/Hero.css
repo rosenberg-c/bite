@@ -44,6 +44,8 @@
 }
 
 .home-hero__photo {
+  --photo-min-height: clamp(20rem, 42vw, 32rem);
+
   width: 100%;
   transform: rotate(1.5deg);
 }

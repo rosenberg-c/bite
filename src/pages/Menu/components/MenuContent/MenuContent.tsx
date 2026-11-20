@@ -1,15 +1,15 @@
-import type { PhotoKey } from "../../../../content/photos";
+import { type PhotoData, photos } from "../../../../content/photos";
 import { menuItems } from "../../data/menu";
 import { menuCopy } from "../../Menu.content";
 import { formatCount } from "../../utils/formatCount";
 import { ProductCard } from "../ProductCard/ProductCard";
 import "./MenuContent.css";
 
-const itemPhotoKeys: Partial<Record<string, PhotoKey>> = {
-  "butter-croissant": "croissant",
-  "cinnamon-bit": "cinnamon",
-  "chocolate-chunk-cookie": "cookie",
-  "iced-vanilla-latte": "latte",
+const itemPhotos: Partial<Record<string, PhotoData>> = {
+  "butter-croissant": photos.croissant,
+  "cinnamon-bit": photos.cinnamon,
+  "chocolate-chunk-cookie": photos.cookie,
+  "iced-vanilla-latte": photos.latte,
 };
 
 const categories = [...new Set(menuItems.map((item) => item.category))];
@@ -31,7 +31,7 @@ export const MenuContent = () => {
                 <ProductCard
                   key={item.id}
                   item={item}
-                  photoKey={itemPhotoKeys[item.id] ?? "pastry"}
+                  photo={itemPhotos[item.id] ?? photos.pastry}
                 />
               ))}
             </div>

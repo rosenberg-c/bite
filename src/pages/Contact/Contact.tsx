@@ -1,8 +1,8 @@
 import { PageHeader } from "../../components/PageHeader/PageHeader";
-import { contactCopy } from "./Contact.content";
-import "./Contact.css";
 import { ContactDetails } from "./components/ContactDetails/ContactDetails";
 import { ContactAside } from "./components/ContactAside/ContactAside";
+import { contactCopy } from "./Contact.content";
+import "./Contact.css";
 
 export const Contact = () => {
   return (

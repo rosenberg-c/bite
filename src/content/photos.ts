@@ -21,4 +21,4 @@ export const photos = {
   coffee: { src: coffeeMoment, alt: "A coffee break at BITE" },
 } as const;
 
-export type PhotoKey = keyof typeof photos;
+export type PhotoData = { src: string; alt: string };

@@ -1,5 +1,6 @@
 import { ButtonLink } from "../../../../components/ButtonLink/ButtonLink";
 import { Photo } from "../../../../components/Photo/Photo";
+import { photos } from "../../../../content/photos";
 import { paths } from "../../../../routes";
 import { aboutCopy } from "../../About.content";
 import "./AboutContent.css";
@@ -7,7 +8,7 @@ import "./AboutContent.css";
 export const AboutContent = () => {
   return (
     <div className="about-page__content">
-      <Photo className="about-page__photo" photoKey="interior" />
+      <Photo className="about-page__photo" photo={photos.interior} />
 
       <div className="about-page__story">
         {aboutCopy.paragraphs.map((paragraph) => (

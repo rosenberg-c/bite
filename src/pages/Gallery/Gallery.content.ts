@@ -1,3 +1,5 @@
+import { photos } from "../../content/photos";
+
 export const galleryCopy = {
   eyebrow: "A little peek",
   title: "Gallery",
@@ -6,17 +8,17 @@ export const galleryCopy = {
     {
       title: "Pastry counter",
       description: "Close-up of a fresh pastry.",
-      photoKey: "pastry",
+      photo: photos.pastry,
     },
     {
       title: "Coffee break",
       description: "A cozy coffee break.",
-      photoKey: "coffee",
+      photo: photos.coffee,
     },
     {
       title: "Café corner",
       description: "A calm corner of the café.",
-      photoKey: "interior",
+      photo: photos.interior,
     },
   ],
 } as const;

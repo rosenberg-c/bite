@@ -1,17 +1,14 @@
-import { type PhotoKey, photos } from "../../content/photos";
+import type { PhotoData } from "../../content/photos";
 import "./Photo.css";
 
 type PhotoProps = {
-  photoKey: PhotoKey;
+  photo: PhotoData;
   className?: string;
   eager?: boolean;
 };
 
-export const Photo = ({ photoKey, className, eager = false }: PhotoProps) => {
-  const photo = photos[photoKey];
-  const classes = ["photo", `photo--${photoKey}`, className]
-    .filter(Boolean)
-    .join(" ");
+export const Photo = ({ photo, className, eager = false }: PhotoProps) => {
+  const classes = ["photo", className].filter(Boolean).join(" ");
 
   return (
     <figure className={classes}>
