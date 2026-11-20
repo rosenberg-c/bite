@@ -26,9 +26,17 @@ export function useThemePreference() {
       media.addEventListener("change", handleChange);
       return () => media.removeEventListener("change", handleChange);
     }
-    if (typeof media.addListener === "function") {
-      media.addListener(handleChange);
-      return () => media.removeListener(handleChange);
+
+    // Older browsers (for example Safari < 14) only expose the deprecated
+    // addListener/removeListener API. Access it through a local type so the
+    // deprecated DOM members do not trigger deprecation diagnostics.
+    const legacyMedia = media as unknown as {
+      addListener?: (listener: (event: MediaQueryListEvent) => void) => void;
+      removeListener?: (listener: (event: MediaQueryListEvent) => void) => void;
+    };
+    if (typeof legacyMedia.addListener === "function") {
+      legacyMedia.addListener(handleChange);
+      return () => legacyMedia.removeListener?.(handleChange);
     }
   }, [preference]);
 
