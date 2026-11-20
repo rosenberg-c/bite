@@ -28,16 +28,11 @@ export default function Menu() {
       <div className="menu-page__content">
         {categories.map((category) => {
           const items = menuItems.filter((item) => item.category === category);
-          const headingId = `menu-${category.toLowerCase().replace(/\s+/g, "-")}`;
 
           return (
-            <section
-              className="menu-page__section"
-              key={category}
-              aria-labelledby={headingId}
-            >
+            <section className="menu-page__section" key={category}>
               <div className="menu-page__section-heading">
-                <h2 id={headingId}>{category}</h2>
+                <h2>{category}</h2>
                 <span>
                   {items.length} {items.length === 1 ? "item" : "items"}
                 </span>
