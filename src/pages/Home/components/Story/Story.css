@@ -1,0 +1,44 @@
+.home-story {
+  padding: clamp(3rem, 8vw, 6rem) var(--space-5);
+  background: var(--color-surface);
+}
+
+.home-story__inner {
+  display: grid;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  max-width: var(--shell-width);
+  margin: 0 auto;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+}
+
+.home-story__heading h2 {
+  max-width: 28rem;
+  margin-top: var(--space-3);
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  letter-spacing: -0.035em;
+}
+
+.home-story__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+  font-size: 1.05rem;
+  color: rgb(var(--color-espresso-rgb) / 82%);
+}
+
+.home-story__closing {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-espresso);
+}
+
+.home-story__body .button-link {
+  margin-top: var(--space-2);
+}
+
+@media (max-width: 52rem) {
+  .home-story__inner {
+    grid-template-columns: 1fr;
+  }
+}
