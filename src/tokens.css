@@ -36,3 +36,21 @@
   --radius-pill: 999px;
   --shadow-card: 0 1.25rem 2.5rem rgb(var(--color-espresso-rgb) / 8%);
 }
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-cream: #1b140f;
+  --color-espresso: #f2e7d8;
+  --color-caramel: #d4a07a;
+  --color-dusty-pink: #e0b8b2;
+  --color-surface: #2a1f18;
+
+  --color-cream-rgb: 27 20 15;
+  --color-espresso-rgb: 242 231 216;
+  --color-caramel-rgb: 212 160 122;
+  --color-dusty-pink-rgb: 224 184 178;
+  --color-surface-rgb: 42 31 24;
+
+  --shadow-card: 0 1.25rem 2.5rem rgb(0 0 0 / 32%);
+}

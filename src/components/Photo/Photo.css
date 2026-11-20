@@ -29,3 +29,14 @@
 .photo--hero {
   --photo-min-height: clamp(20rem, 42vw, 32rem);
 }
+
+[data-theme="dark"] .photo {
+  background:
+    radial-gradient(
+      circle at 78% 18%,
+      rgb(255 255 255 / 10%) 0 12%,
+      transparent 34%
+    ),
+    var(--color-surface);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 12%);
+}

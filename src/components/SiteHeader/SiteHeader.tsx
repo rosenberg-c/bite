@@ -2,10 +2,12 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router";
 import { brand } from "../../content/site";
 import { navigation, paths } from "../../routes";
+import { useThemePreference } from "../../hooks/useTheme";
 import "./SiteHeader.css";
 
 export default function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
+  const { preference, setPreference } = useThemePreference();
 
   return (
     <header className="site-header">
@@ -20,6 +22,21 @@ export default function SiteHeader() {
         </Link>
 
         <div className="site-header__actions">
+          <label className="site-header__theme">
+            <span className="site-header__theme-label">Theme</span>
+            <select
+              className="site-header__theme-select"
+              value={preference}
+              aria-label="Color theme"
+              onChange={(event) =>
+                setPreference(event.target.value as "system" | "light" | "dark")
+              }
+            >
+              <option value="system">System</option>
+              <option value="light">Light</option>
+              <option value="dark">Dark</option>
+            </select>
+          </label>
           <button
             type="button"
             className="site-header__toggle"
