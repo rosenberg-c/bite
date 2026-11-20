@@ -1,12 +1,3 @@
-.gallery-page__note {
-  display: inline-block;
-  padding: 0.6rem 0.9rem;
-  border: 1px dashed rgb(var(--color-caramel-rgb) / 45%);
-  border-radius: 0.9rem;
-  background: rgb(var(--color-dusty-pink-rgb) / 16%);
-  font-size: 0.86rem;
-}
-
 .gallery-page__content {
   display: grid;
   gap: var(--space-6) var(--space-8);
