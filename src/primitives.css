@@ -10,10 +10,11 @@
 /* Responsive two-column content layout; components provide the column template. */
 .two-column {
   display: grid;
+  grid-template-columns: var(--two-column-template, 1fr);
 }
 
 @media (max-width: 52rem) {
   .two-column {
-    grid-template-columns: 1fr !important;
+    grid-template-columns: 1fr;
   }
 }

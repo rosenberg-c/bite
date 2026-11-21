@@ -5,7 +5,7 @@
 
 .home-story__inner {
   gap: clamp(1.5rem, 5vw, 4rem);
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  --two-column-template: minmax(0, 0.85fr) minmax(0, 1.15fr);
 }
 
 .home-story__heading h2 {
