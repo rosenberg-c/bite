@@ -61,6 +61,24 @@ describe("MenuContent", () => {
     ).toBeTruthy();
   });
 
+  it("uses shared heading and flush-card styles", () => {
+    render(<MenuContent />);
+
+    const category = screen.getByRole("heading", {
+      level: 2,
+      name: "Pastries",
+    });
+    expect(category.classList.contains("subsection-heading")).toBe(true);
+
+    const card = cardForProduct("Butter Croissant");
+    expect(card.classList.contains("surface-card--flush")).toBe(true);
+    expect(
+      within(card)
+        .getByRole("heading", { level: 3, name: "Butter Croissant" })
+        .classList.contains("card-title"),
+    ).toBe(true);
+  });
+
   it.each(menuItems.map((item) => [item.name, item.priceSEK] as const))(
     "renders %s with its price of %s SEK",
     (name, price) => {

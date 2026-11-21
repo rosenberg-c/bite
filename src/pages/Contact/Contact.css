@@ -3,13 +3,3 @@
   gap: var(--space-6);
   --two-column-template: minmax(0, 1.1fr) minmax(0, 0.9fr);
 }
-
-.contact-page__details,
-.contact-page__aside {
-  padding: clamp(1.5rem, 4vw, 2.25rem);
-}
-
-.contact-page__details h2,
-.contact-page__aside h2 {
-  font-size: clamp(1.6rem, 4vw, 2.25rem);
-}

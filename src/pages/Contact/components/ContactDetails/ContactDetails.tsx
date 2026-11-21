@@ -7,7 +7,9 @@ export const ContactDetails = () => {
       className="contact-page__details surface-card"
       aria-labelledby="contact-details-title"
     >
-      <h2 id="contact-details-title">{contactCopy.detailsTitle}</h2>
+      <h2 id="contact-details-title" className="subsection-heading">
+        {contactCopy.detailsTitle}
+      </h2>
       <dl className="contact-page__list">
         {contactCopy.details.map((detail) => (
           <div className="contact-page__row" key={detail.label}>

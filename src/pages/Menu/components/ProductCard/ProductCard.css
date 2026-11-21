@@ -9,7 +9,7 @@
 
 .product-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 1.6rem 3rem rgb(var(--color-espresso-rgb) / 12%);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .product-card__photo {
@@ -24,7 +24,6 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 0.55rem;
   padding: var(--space-5);
 }
 
@@ -34,6 +33,7 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-2);
+  margin-bottom: var(--space-2);
 }
 
 .product-card__category {
@@ -51,10 +51,6 @@
   font-size: 1.05rem;
   font-weight: 800;
   color: var(--color-caramel);
-}
-
-.product-card__name {
-  font-size: 1.2rem;
 }
 
 @media (prefers-reduced-motion: reduce) {

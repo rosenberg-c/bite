@@ -17,7 +17,7 @@ export const AboutValues = () => {
               className="about-page__value surface-card"
               key={value.title}
             >
-              <h3>{value.title}</h3>
+              <h3 className="card-title">{value.title}</h3>
               <p className="card-copy">{value.body}</p>
             </article>
           ))}

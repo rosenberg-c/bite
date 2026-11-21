@@ -23,7 +23,7 @@ export const MenuContent = () => {
         return (
           <section className="menu-page__section" key={category}>
             <div className="menu-page__section-heading">
-              <h2>{category}</h2>
+              <h2 className="subsection-heading">{category}</h2>
               <span>{formatCount(items.length, menuCopy.count)}</span>
             </div>
             <div className="menu-page__grid">

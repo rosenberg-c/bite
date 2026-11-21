@@ -35,6 +35,7 @@
   --radius-card: 1.25rem;
   --radius-pill: 999px;
   --shadow-card: 0 1.25rem 2.5rem rgb(var(--color-espresso-rgb) / 8%);
+  --shadow-card-hover: 0 1.6rem 3rem rgb(var(--color-espresso-rgb) / 12%);
 }
 
 [data-theme="dark"] {
@@ -53,4 +54,5 @@
   --color-surface-rgb: 42 31 24;
 
   --shadow-card: 0 1.25rem 2.5rem rgb(0 0 0 / 32%);
+  --shadow-card-hover: 0 1.6rem 3rem rgb(0 0 0 / 48%);
 }

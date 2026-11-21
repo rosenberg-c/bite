@@ -81,4 +81,49 @@ describe("App routes", () => {
     const cta = screen.getByRole("link", { name: notFoundCopy.cta });
     expect(cta.getAttribute("href")).toBe(paths.home);
   });
+
+  it("uses the shared card title on home value cards", () => {
+    renderAt(paths.home);
+
+    expect(
+      screen
+        .getByRole("heading", { level: 3, name: home.values[0].title })
+        .classList.contains("card-title"),
+    ).toBe(true);
+  });
+
+  it("uses the shared card title on about value cards", () => {
+    renderAt(paths.about);
+
+    expect(
+      screen
+        .getByRole("heading", { level: 3, name: aboutCopy.values[0].title })
+        .classList.contains("card-title"),
+    ).toBe(true);
+  });
+
+  it("uses the shared card title on gallery items", () => {
+    renderAt(paths.gallery);
+
+    expect(
+      screen
+        .getByRole("heading", { level: 2, name: galleryCopy.items[0].title })
+        .classList.contains("card-title"),
+    ).toBe(true);
+  });
+
+  it("uses shared subsection headings on contact cards", () => {
+    renderAt(paths.contact);
+
+    expect(
+      screen
+        .getByRole("heading", { level: 2, name: contactCopy.detailsTitle })
+        .classList.contains("subsection-heading"),
+    ).toBe(true);
+    expect(
+      screen
+        .getByRole("heading", { level: 2, name: contactCopy.getInTouchTitle })
+        .classList.contains("subsection-heading"),
+    ).toBe(true);
+  });
 });

@@ -11,7 +11,7 @@ type ProductCardProps = {
 
 export const ProductCard = ({ item, photo }: ProductCardProps) => {
   return (
-    <article className="product-card surface-card">
+    <article className="product-card surface-card surface-card--flush">
       <Photo className="product-card__photo" photo={photo} />
       <div className="product-card__body">
         <div className="product-card__meta">
@@ -20,7 +20,7 @@ export const ProductCard = ({ item, photo }: ProductCardProps) => {
             {item.priceSEK} {productCardCopy.priceSuffix}
           </span>
         </div>
-        <h3 className="product-card__name">{item.name}</h3>
+        <h3 className="card-title">{item.name}</h3>
         <p className="card-copy">{item.description}</p>
       </div>
     </article>

@@ -6,22 +6,7 @@
   margin-top: var(--space-8);
 }
 
-.about-page__value {
-  padding: var(--space-6);
-}
-
 /* Two classes keep the accent above the shared .surface-card border shorthand. */
 .about-page__values-grid .about-page__value {
   border-top: 3px solid var(--color-dusty-pink);
-}
-
-.about-page__value h3 {
-  margin: var(--space-4) 0 var(--space-2);
-  font-size: 1.2rem;
-}
-
-@media (max-width: 52rem) {
-  .about-page__values-grid {
-    grid-template-columns: 1fr;
-  }
 }
