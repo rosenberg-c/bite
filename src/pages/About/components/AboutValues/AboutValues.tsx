@@ -9,7 +9,7 @@ export const AboutValues = () => {
     >
       <div className="about-page__values-inner container">
         <h2 id="about-values-title">{aboutCopy.valuesTitle}</h2>
-        <div className="about-page__values-grid">
+        <div className="about-page__values-grid three-column-grid">
           {aboutCopy.values.map((value) => (
             <article className="about-page__value" key={value.title}>
               <h3>{value.title}</h3>

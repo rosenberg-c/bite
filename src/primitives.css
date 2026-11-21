@@ -37,3 +37,9 @@
   background: var(--color-surface);
   box-shadow: var(--shadow-card);
 }
+/* Shared three-column grid base. */
+.three-column-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
