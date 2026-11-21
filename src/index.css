@@ -45,6 +45,13 @@ a {
   color: inherit;
 }
 
+/* Shared layout primitive for site content width. */
+.container {
+  max-width: var(--shell-width);
+  margin-inline: auto;
+  padding-inline: var(--space-5);
+}
+
 a:focus-visible,
 button:focus-visible {
   outline: 3px solid var(--color-caramel);

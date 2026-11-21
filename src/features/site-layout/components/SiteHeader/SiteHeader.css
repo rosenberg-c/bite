@@ -12,9 +12,7 @@
   flex-wrap: wrap;
   align-items: center;
   gap: var(--space-3) var(--space-5);
-  max-width: var(--shell-width);
-  margin: 0 auto;
-  padding: 0.8rem var(--space-5);
+  padding-block: 0.8rem;
 }
 
 .site-header__brand {

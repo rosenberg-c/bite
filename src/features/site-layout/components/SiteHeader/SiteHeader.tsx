@@ -13,7 +13,7 @@ export const SiteHeader = () => {
 
   return (
     <header className="site-header">
-      <div className="site-header__inner">
+      <div className="site-header__inner container">
         <Link
           className="site-header__brand"
           to={paths.home}

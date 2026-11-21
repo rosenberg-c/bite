@@ -7,7 +7,7 @@ import "./SiteFooter.css";
 export const SiteFooter = () => {
   return (
     <footer className="site-footer">
-      <div className="site-footer__inner">
+      <div className="site-footer__inner container">
         <div className="site-footer__intro">
           <span className="site-footer__wordmark">{brand.wordmark}</span>
           <p>{brand.tagline}</p>
@@ -28,7 +28,7 @@ export const SiteFooter = () => {
         </nav>
       </div>
 
-      <div className="site-footer__bottom">
+      <div className="site-footer__bottom container">
         <p>{footerCopy.notice}</p>
         <p>{brand.name}</p>
       </div>
