@@ -18,3 +18,7 @@
     grid-template-columns: 1fr;
   }
 }
+/* Shared page content padding. */
+.page-content {
+  padding-block: clamp(2rem, 6vw, 4rem) clamp(3.5rem, 8vw, 6rem);
+}

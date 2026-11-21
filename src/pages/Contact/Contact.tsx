@@ -13,7 +13,7 @@ export const Contact = () => {
         lead={contactCopy.lead}
       />
 
-      <div className="contact-page__content container two-column">
+      <div className="contact-page__content container two-column page-content">
         <ContactDetails />
         <ContactAside />
       </div>

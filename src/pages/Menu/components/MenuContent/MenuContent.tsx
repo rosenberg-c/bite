@@ -16,7 +16,7 @@ const categories = [...new Set(menuItems.map((item) => item.category))];
 
 export const MenuContent = () => {
   return (
-    <div className="menu-page__content container">
+    <div className="menu-page__content container page-content">
       {categories.map((category) => {
         const items = menuItems.filter((item) => item.category === category);
 
