@@ -11,11 +11,6 @@
 
 .page-header__eyebrow {
   margin-bottom: var(--space-3);
-  font-size: 0.76rem;
-  font-weight: 800;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--color-caramel);
 }
 
 .page-header__title {

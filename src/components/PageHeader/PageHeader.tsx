@@ -17,7 +17,7 @@ export const PageHeader = ({
   return (
     <header className="page-header">
       <div className="page-header__inner container">
-        <p className="page-header__eyebrow">{eyebrow}</p>
+        <p className="page-header__eyebrow eyebrow">{eyebrow}</p>
         <h1 className="page-header__title">{title}</h1>
         <p className="page-header__lead">{lead}</p>
         {children ? <div className="page-header__extra">{children}</div> : null}

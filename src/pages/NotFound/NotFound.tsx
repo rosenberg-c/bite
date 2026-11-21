@@ -6,7 +6,7 @@ import "./NotFound.css";
 export const NotFound = () => {
   return (
     <section className="not-found" aria-labelledby="not-found-title">
-      <p className="not-found__eyebrow">{notFoundCopy.eyebrow}</p>
+      <p className="not-found__eyebrow eyebrow">{notFoundCopy.eyebrow}</p>
       <h1 id="not-found-title" className="not-found__title">
         {notFoundCopy.title}
       </h1>

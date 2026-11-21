@@ -10,7 +10,7 @@ export const Hero = () => {
     <section className="home-hero" aria-labelledby="home-title">
       <div className="home-hero__inner container two-column">
         <div className="home-hero__copy">
-          <p className="home-hero__eyebrow">{home.eyebrow}</p>
+          <p className="eyebrow">{home.eyebrow}</p>
           <h1 id="home-title" className="home-hero__title">
             {home.titleLines.flatMap((line, i) =>
               i === 0 ? [line] : [<br key={i} />, line],
