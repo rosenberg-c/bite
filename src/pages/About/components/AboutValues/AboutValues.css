@@ -8,8 +8,11 @@
 
 .about-page__value {
   padding: var(--space-6);
+}
+
+/* Two classes keep the accent above the shared .surface-card border shorthand. */
+.about-page__values-grid .about-page__value {
   border-top: 3px solid var(--color-dusty-pink);
-  background: rgb(var(--color-cream-rgb) / 62%);
 }
 
 .about-page__value h3 {

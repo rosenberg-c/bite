@@ -8,9 +8,6 @@
 
 .home-values__card {
   padding: 1.6rem;
-  border: 1px solid rgb(var(--color-espresso-rgb) / 10%);
-  border-radius: var(--radius-card);
-  background: rgb(var(--color-surface-rgb) / 72%);
 }
 
 .home-values__card h3 {

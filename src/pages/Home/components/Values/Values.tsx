@@ -14,7 +14,10 @@ export const Values = () => {
         </h2>
         <div className="home-values__grid three-column-grid">
           {home.values.map((value) => (
-            <article className="home-values__card" key={value.title}>
+            <article
+              className="home-values__card surface-card"
+              key={value.title}
+            >
               <h3>{value.title}</h3>
               <p className="card-copy">{value.body}</p>
             </article>

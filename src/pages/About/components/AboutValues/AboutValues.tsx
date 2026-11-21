@@ -13,7 +13,10 @@ export const AboutValues = () => {
         </h2>
         <div className="about-page__values-grid three-column-grid">
           {aboutCopy.values.map((value) => (
-            <article className="about-page__value" key={value.title}>
+            <article
+              className="about-page__value surface-card"
+              key={value.title}
+            >
               <h3>{value.title}</h3>
               <p className="card-copy">{value.body}</p>
             </article>
