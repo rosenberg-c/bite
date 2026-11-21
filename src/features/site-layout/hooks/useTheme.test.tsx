@@ -1,5 +1,5 @@
 import { act, renderHook } from "@testing-library/react";
-import { afterEach, describe, expect, it, vi } from "vite-plus/test";
+import { describe, expect, it, vi } from "vite-plus/test";
 import { THEME_STORAGE_KEY } from "../theme";
 import { useThemePreference } from "./useTheme";
 
@@ -33,11 +33,6 @@ const createSystemMedia = (matches: boolean) => {
     },
   };
 };
-
-afterEach(() => {
-  vi.restoreAllMocks();
-  document.documentElement.style.colorScheme = "";
-});
 
 describe("useThemePreference", () => {
   it("restores a stored preference on mount", () => {
