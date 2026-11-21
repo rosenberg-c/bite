@@ -19,7 +19,7 @@ export const GalleryContent = ({ items }: Props) => {
           <Photo photo={item.photo} />
           <div className="gallery-page__item-copy">
             <h2>{item.title}</h2>
-            <p>{item.description}</p>
+            <p className="card-copy">{item.description}</p>
           </div>
         </article>
       ))}

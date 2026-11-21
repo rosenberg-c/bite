@@ -11,7 +11,7 @@ export const Values = () => {
           {home.values.map((value) => (
             <article className="home-values__card" key={value.title}>
               <h3>{value.title}</h3>
-              <p>{value.body}</p>
+              <p className="card-copy">{value.body}</p>
             </article>
           ))}
         </div>

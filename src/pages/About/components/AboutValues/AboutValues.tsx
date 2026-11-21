@@ -13,7 +13,7 @@ export const AboutValues = () => {
           {aboutCopy.values.map((value) => (
             <article className="about-page__value" key={value.title}>
               <h3>{value.title}</h3>
-              <p>{value.body}</p>
+              <p className="card-copy">{value.body}</p>
             </article>
           ))}
         </div>

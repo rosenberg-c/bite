@@ -30,11 +30,6 @@
   font-size: 1.2rem;
 }
 
-.about-page__value p {
-  font-size: 0.94rem;
-  color: rgb(var(--color-espresso-rgb) / 76%);
-}
-
 @media (max-width: 52rem) {
   .about-page__values-grid {
     grid-template-columns: 1fr;
