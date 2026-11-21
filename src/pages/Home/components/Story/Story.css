@@ -10,8 +10,6 @@
 .home-story__heading h2 {
   max-width: 28rem;
   margin-top: var(--space-3);
-  font-size: clamp(2rem, 5vw, 3.25rem);
-  letter-spacing: -0.035em;
 }
 
 .home-story__closing {

@@ -9,7 +9,9 @@ export const Values = () => {
     >
       <div className="home-values__inner container">
         <p className="eyebrow">{home.valuesEyebrow}</p>
-        <h2 id="home-values-title">{home.valuesTitle}</h2>
+        <h2 id="home-values-title" className="section-heading">
+          {home.valuesTitle}
+        </h2>
         <div className="home-values__grid three-column-grid">
           {home.values.map((value) => (
             <article className="home-values__card" key={value.title}>

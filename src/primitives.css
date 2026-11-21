@@ -48,6 +48,12 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+/* Shared section heading typography. */
+.section-heading {
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.035em;
+}
+
 /* Shared body copy column. */
 .body-copy {
   display: flex;

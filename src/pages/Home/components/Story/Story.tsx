@@ -12,7 +12,9 @@ export const Story = () => {
       <div className="home-story__inner container two-column">
         <div className="home-story__heading">
           <p className="eyebrow">{home.storyEyebrow}</p>
-          <h2 id="home-story-title">{home.storyTitle}</h2>
+          <h2 id="home-story-title" className="section-heading">
+            {home.storyTitle}
+          </h2>
         </div>
         <div className="home-story__body body-copy">
           {home.storyParagraphs.map((paragraph) => (

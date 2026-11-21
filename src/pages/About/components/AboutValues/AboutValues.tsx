@@ -8,7 +8,9 @@ export const AboutValues = () => {
       aria-labelledby="about-values-title"
     >
       <div className="about-page__values-inner container">
-        <h2 id="about-values-title">{aboutCopy.valuesTitle}</h2>
+        <h2 id="about-values-title" className="section-heading">
+          {aboutCopy.valuesTitle}
+        </h2>
         <div className="about-page__values-grid three-column-grid">
           {aboutCopy.values.map((value) => (
             <article className="about-page__value" key={value.title}>

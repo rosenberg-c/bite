@@ -2,11 +2,6 @@
   background: var(--color-surface);
 }
 
-.about-page__values h2 {
-  font-size: clamp(2rem, 5vw, 3rem);
-  letter-spacing: -0.035em;
-}
-
 .about-page__values-grid {
   margin-top: var(--space-8);
 }
