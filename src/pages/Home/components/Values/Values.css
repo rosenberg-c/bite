@@ -19,16 +19,6 @@
   background: rgb(var(--color-surface-rgb) / 72%);
 }
 
-.home-values__number {
-  display: inline-block;
-  margin-bottom: var(--space-6);
-  font-family: var(--font-heading);
-  font-size: 0.8rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  color: var(--color-caramel);
-}
-
 .home-values__card h3 {
   margin-bottom: var(--space-2);
   font-size: 1.25rem;

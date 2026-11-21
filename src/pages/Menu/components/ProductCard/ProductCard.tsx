@@ -21,7 +21,7 @@ export const ProductCard = ({ item, photo }: ProductCardProps) => {
           </span>
         </div>
         <h3 className="product-card__name">{item.name}</h3>
-        <p className="product-card__description">{item.description}</p>
+        <p className="card-copy">{item.description}</p>
       </div>
     </article>
   );
