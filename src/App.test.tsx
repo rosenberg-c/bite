@@ -54,6 +54,27 @@ describe("App routes", () => {
     expect(screen.getByRole("link", { name: home.secondaryCta })).toBeTruthy();
   });
 
+  it("sends the home primary call to action to the menu", () => {
+    renderAt(paths.home);
+
+    const cta = screen.getByRole("link", { name: home.primaryCta });
+    expect(cta.getAttribute("href")).toBe(paths.menu);
+  });
+
+  it("sends the contact primary call to action to the menu", () => {
+    renderAt(paths.contact);
+
+    const primaryAction = contactCopy.actions.find(
+      (action) => action.variant === "primary",
+    );
+    if (!primaryAction) {
+      throw new Error("Missing primary contact call to action");
+    }
+
+    const cta = screen.getByRole("link", { name: primaryAction.label });
+    expect(cta.getAttribute("href")).toBe(paths.menu);
+  });
+
   it("renders the not-found call to action back home", () => {
     renderAt("/missing-page");
 
