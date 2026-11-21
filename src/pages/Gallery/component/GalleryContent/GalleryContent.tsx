@@ -13,7 +13,7 @@ interface Props {
 }
 export const GalleryContent = ({ items }: Props) => {
   return (
-    <div className="gallery-page__content">
+    <div className="gallery-page__content container">
       {items.map((item) => (
         <article className="gallery-page__item" key={item.title}>
           <Photo photo={item.photo} />

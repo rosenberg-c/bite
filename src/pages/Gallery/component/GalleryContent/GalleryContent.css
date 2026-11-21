@@ -1,9 +1,7 @@
 .gallery-page__content {
   display: grid;
   gap: var(--space-6) var(--space-8);
-  max-width: var(--shell-width);
-  margin: 0 auto;
-  padding: clamp(2rem, 6vw, 4rem) var(--space-5) clamp(3.5rem, 8vw, 6rem);
+  padding-block: clamp(2rem, 6vw, 4rem) clamp(3.5rem, 8vw, 6rem);
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
