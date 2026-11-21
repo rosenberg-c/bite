@@ -1,5 +1,4 @@
 .about-page__values {
-  padding-block: clamp(3rem, 7vw, 5rem);
   background: var(--color-surface);
 }
 

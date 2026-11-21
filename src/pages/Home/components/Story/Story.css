@@ -1,5 +1,4 @@
 .home-story {
-  padding-block: clamp(3rem, 8vw, 6rem);
   background: var(--color-surface);
 }
 

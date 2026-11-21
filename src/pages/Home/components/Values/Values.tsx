@@ -3,7 +3,10 @@ import "./Values.css";
 
 export const Values = () => {
   return (
-    <section className="home-values" aria-labelledby="home-values-title">
+    <section
+      className="home-values section-rhythm"
+      aria-labelledby="home-values-title"
+    >
       <div className="home-values__inner container">
         <p className="eyebrow">{home.valuesEyebrow}</p>
         <h2 id="home-values-title">{home.valuesTitle}</h2>

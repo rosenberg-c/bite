@@ -5,7 +5,10 @@ import "./Story.css";
 
 export const Story = () => {
   return (
-    <section className="home-story" aria-labelledby="home-story-title">
+    <section
+      className="home-story section-rhythm"
+      aria-labelledby="home-story-title"
+    >
       <div className="home-story__inner container two-column">
         <div className="home-story__heading">
           <p className="eyebrow">{home.storyEyebrow}</p>

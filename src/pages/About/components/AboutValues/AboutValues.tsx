@@ -4,7 +4,7 @@ import "./AboutValues.css";
 export const AboutValues = () => {
   return (
     <section
-      className="about-page__values"
+      className="about-page__values section-rhythm"
       aria-labelledby="about-values-title"
     >
       <div className="about-page__values-inner container">
