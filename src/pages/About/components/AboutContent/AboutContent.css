@@ -11,15 +11,6 @@
   width: 100%;
 }
 
-.about-page__story {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.1rem;
-  font-size: 1.05rem;
-  color: rgb(var(--color-espresso-rgb) / 82%);
-}
-
 .about-page__story .button-link {
   margin-top: var(--space-2);
 }

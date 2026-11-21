@@ -11,7 +11,7 @@ export const Story = () => {
           <p className="eyebrow">{home.storyEyebrow}</p>
           <h2 id="home-story-title">{home.storyTitle}</h2>
         </div>
-        <div className="home-story__body">
+        <div className="home-story__body body-copy">
           {home.storyParagraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
