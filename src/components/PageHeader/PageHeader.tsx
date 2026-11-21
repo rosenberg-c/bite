@@ -19,7 +19,7 @@ export const PageHeader = ({
       <div className="page-header__inner container">
         <p className="page-header__eyebrow eyebrow">{eyebrow}</p>
         <h1 className="page-header__title">{title}</h1>
-        <p className="page-header__lead">{lead}</p>
+        <p className="page-header__lead lead-copy">{lead}</p>
         {children ? <div className="page-header__extra">{children}</div> : null}
       </div>
     </header>

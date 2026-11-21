@@ -16,7 +16,7 @@ export const Hero = () => {
               i === 0 ? [line] : [<br key={i} />, line],
             )}
           </h1>
-          <p className="home-hero__lead">{home.lead}</p>
+          <p className="home-hero__lead lead-copy">{home.lead}</p>
           <div className="home-hero__actions action-row">
             <ButtonLink to={paths.menu}>{home.primaryCta}</ButtonLink>
             <ButtonLink to={paths.about} variant="quiet">
