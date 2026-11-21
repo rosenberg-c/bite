@@ -2,12 +2,7 @@ import type { ReactNode } from "react";
 import { Link } from "react-router";
 import "./ButtonLink.css";
 
-const buttonVariants = {
-  primary: "primary",
-  quiet: "quiet",
-} as const;
-
-type ButtonVariant = (typeof buttonVariants)[keyof typeof buttonVariants];
+type ButtonVariant = "primary" | "quiet";
 
 type ButtonLinkProps = {
   to: string;
