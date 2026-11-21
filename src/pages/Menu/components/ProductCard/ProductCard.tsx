@@ -11,7 +11,7 @@ type ProductCardProps = {
 
 export const ProductCard = ({ item, photo }: ProductCardProps) => {
   return (
-    <article className="product-card">
+    <article className="product-card surface-card">
       <Photo className="product-card__photo" photo={photo} />
       <div className="product-card__body">
         <div className="product-card__meta">

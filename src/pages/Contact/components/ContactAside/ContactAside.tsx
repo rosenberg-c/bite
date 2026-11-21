@@ -5,7 +5,7 @@ import "./ContactAside.css";
 export const ContactAside = () => {
   return (
     <aside
-      className="contact-page__aside"
+      className="contact-page__aside surface-card"
       aria-labelledby="contact-get-in-touch-title"
     >
       <h2 id="contact-get-in-touch-title">{contactCopy.getInTouchTitle}</h2>
