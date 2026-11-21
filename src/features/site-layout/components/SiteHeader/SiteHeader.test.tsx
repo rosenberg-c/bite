@@ -2,6 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
 import { describe, expect, it } from "vite-plus/test";
 import { navigation } from "../../content/navigation";
+import { THEME_STORAGE_KEY } from "../../theme";
 import { paths } from "../../../../routes";
 import { siteHeaderCopy } from "./SiteHeader.content";
 import { SiteHeader } from "./SiteHeader";
@@ -125,6 +126,18 @@ describe("SiteHeader", () => {
       siteHeaderCopy.themeOptions.dark,
     ]);
     expect((select as HTMLSelectElement).value).toBe("system");
+  });
+
+  it("restores a stored theme preference in the select", () => {
+    localStorage.setItem(THEME_STORAGE_KEY, "dark");
+
+    renderHeader();
+
+    const select = screen.getByRole("combobox", {
+      name: siteHeaderCopy.colorThemeLabel,
+    });
+    expect((select as HTMLSelectElement).value).toBe("dark");
+    expect(document.documentElement.dataset.theme).toBe("dark");
   });
 
   it("updates the stored theme preference when changed", () => {
