@@ -6,6 +6,11 @@ export default defineConfig({
   server: {
     host: true,
   },
+  test: {
+    environment: "happy-dom",
+    include: ["src/**/*.{test,spec}.{ts,tsx}"],
+    setupFiles: ["./src/test/setup.ts"],
+  },
   fmt: {
     printWidth: 80,
   },
