@@ -1,11 +1,6 @@
 .about-page__values {
-  padding: clamp(3rem, 7vw, 5rem) var(--space-5);
+  padding-block: clamp(3rem, 7vw, 5rem);
   background: var(--color-surface);
-}
-
-.about-page__values-inner {
-  max-width: var(--shell-width);
-  margin: 0 auto;
 }
 
 .about-page__values h2 {

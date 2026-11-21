@@ -4,7 +4,7 @@ import "./Values.css";
 export const Values = () => {
   return (
     <section className="home-values" aria-labelledby="home-values-title">
-      <div className="home-values__inner">
+      <div className="home-values__inner container">
         <p className="home-values__eyebrow">{home.valuesEyebrow}</p>
         <h2 id="home-values-title">{home.valuesTitle}</h2>
         <div className="home-values__grid">

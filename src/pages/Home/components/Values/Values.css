@@ -1,10 +1,5 @@
 .home-values {
-  padding: clamp(3rem, 8vw, 6rem) var(--space-5);
-}
-
-.home-values__inner {
-  max-width: var(--shell-width);
-  margin: 0 auto;
+  padding-block: clamp(3rem, 8vw, 6rem);
 }
 
 .home-values__inner h2 {

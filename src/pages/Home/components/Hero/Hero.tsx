@@ -8,7 +8,7 @@ import "./Hero.css";
 export const Hero = () => {
   return (
     <section className="home-hero" aria-labelledby="home-title">
-      <div className="home-hero__inner">
+      <div className="home-hero__inner container">
         <div className="home-hero__copy">
           <p className="home-hero__eyebrow">{home.eyebrow}</p>
           <h1 id="home-title" className="home-hero__title">

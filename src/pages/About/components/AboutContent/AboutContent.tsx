@@ -7,7 +7,7 @@ import "./AboutContent.css";
 
 export const AboutContent = () => {
   return (
-    <div className="about-page__content">
+    <div className="about-page__content container">
       <Photo className="about-page__photo" photo={photos.interior} />
 
       <div className="about-page__story">

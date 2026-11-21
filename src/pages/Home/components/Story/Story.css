@@ -1,13 +1,11 @@
 .home-story {
-  padding: clamp(3rem, 8vw, 6rem) var(--space-5);
+  padding-block: clamp(3rem, 8vw, 6rem);
   background: var(--color-surface);
 }
 
 .home-story__inner {
   display: grid;
   gap: clamp(1.5rem, 5vw, 4rem);
-  max-width: var(--shell-width);
-  margin: 0 auto;
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
 }
 
