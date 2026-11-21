@@ -10,7 +10,7 @@ export const ContactAside = () => {
     >
       <h2 id="contact-get-in-touch-title">{contactCopy.getInTouchTitle}</h2>
       <p>{contactCopy.getInTouchBody}</p>
-      <div className="contact-page__actions">
+      <div className="contact-page__actions action-row">
         {contactCopy.actions.map((action) => (
           <ButtonLink key={action.to} to={action.to} variant={action.variant}>
             {action.label}

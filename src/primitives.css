@@ -1,0 +1,19 @@
+/* Shared, reusable layout primitives. Imported once in src/main.tsx. */
+
+/* Horizontal row of actions that wraps on narrow viewports. */
+.action-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+/* Responsive two-column content layout; components provide the column template. */
+.two-column {
+  display: grid;
+}
+
+@media (max-width: 52rem) {
+  .two-column {
+    grid-template-columns: 1fr !important;
+  }
+}

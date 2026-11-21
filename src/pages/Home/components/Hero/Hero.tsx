@@ -8,7 +8,7 @@ import "./Hero.css";
 export const Hero = () => {
   return (
     <section className="home-hero" aria-labelledby="home-title">
-      <div className="home-hero__inner container">
+      <div className="home-hero__inner container two-column">
         <div className="home-hero__copy">
           <p className="home-hero__eyebrow">{home.eyebrow}</p>
           <h1 id="home-title" className="home-hero__title">
@@ -17,7 +17,7 @@ export const Hero = () => {
             )}
           </h1>
           <p className="home-hero__lead">{home.lead}</p>
-          <div className="home-hero__actions">
+          <div className="home-hero__actions action-row">
             <ButtonLink to={paths.menu}>{home.primaryCta}</ButtonLink>
             <ButtonLink to={paths.about} variant="quiet">
               {home.secondaryCta}

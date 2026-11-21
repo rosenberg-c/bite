@@ -1,5 +1,4 @@
 .contact-page__content {
-  display: grid;
   align-items: start;
   gap: var(--space-6);
   padding-block: clamp(2rem, 6vw, 4rem) clamp(3.5rem, 8vw, 6rem);
@@ -18,10 +17,4 @@
 .contact-page__details h2,
 .contact-page__aside h2 {
   font-size: clamp(1.6rem, 4vw, 2.25rem);
-}
-
-@media (max-width: 52rem) {
-  .contact-page__content {
-    grid-template-columns: 1fr;
-  }
 }

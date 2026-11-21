@@ -4,7 +4,6 @@
 }
 
 .home-story__inner {
-  display: grid;
   gap: clamp(1.5rem, 5vw, 4rem);
   grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
 }
@@ -33,10 +32,4 @@
 
 .home-story__body .button-link {
   margin-top: var(--space-2);
-}
-
-@media (max-width: 52rem) {
-  .home-story__inner {
-    grid-template-columns: 1fr;
-  }
 }

@@ -6,7 +6,7 @@ import "./Story.css";
 export const Story = () => {
   return (
     <section className="home-story" aria-labelledby="home-story-title">
-      <div className="home-story__inner container">
+      <div className="home-story__inner container two-column">
         <div className="home-story__heading">
           <p className="home-story__eyebrow">{home.storyEyebrow}</p>
           <h2 id="home-story-title">{home.storyTitle}</h2>
