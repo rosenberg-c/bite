@@ -3,10 +3,7 @@ import "./ContactDetails.css";
 
 export const ContactDetails = () => {
   return (
-    <section
-      className="contact-page__details surface-card"
-      aria-labelledby="contact-details-title"
-    >
+    <section className="surface-card" aria-labelledby="contact-details-title">
       <h2 id="contact-details-title" className="subsection-heading">
         {contactCopy.detailsTitle}
       </h2>

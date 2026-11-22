@@ -10,7 +10,7 @@ export const AboutContent = () => {
     <div className="about-page__content container two-column page-content">
       <Photo className="about-page__photo" photo={photos.interior} />
 
-      <div className="about-page__story body-copy">
+      <div className="body-copy">
         {aboutCopy.paragraphs.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}
