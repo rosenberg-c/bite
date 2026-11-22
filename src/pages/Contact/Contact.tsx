@@ -6,7 +6,7 @@ import "./Contact.css";
 
 export const Contact = () => {
   return (
-    <div className="contact-page">
+    <div>
       <PageHeader
         eyebrow={contactCopy.eyebrow}
         title={contactCopy.title}

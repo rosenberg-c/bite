@@ -9,7 +9,7 @@ export const Hero = () => {
   return (
     <section className="home-hero" aria-labelledby="home-title">
       <div className="home-hero__inner container two-column">
-        <div className="home-hero__copy">
+        <div>
           <p className="eyebrow">{home.eyebrow}</p>
           <h1 id="home-title" className="home-hero__title">
             {home.titleLines.flatMap((line, i) =>

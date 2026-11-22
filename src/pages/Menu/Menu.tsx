@@ -5,7 +5,7 @@ import "./Menu.css";
 
 export const Menu = () => {
   return (
-    <div className="menu-page">
+    <div>
       <PageHeader
         eyebrow={menuCopy.eyebrow}
         title={menuCopy.title}

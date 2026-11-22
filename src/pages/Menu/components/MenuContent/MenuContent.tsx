@@ -21,7 +21,7 @@ export const MenuContent = () => {
         const items = menuItems.filter((item) => item.category === category);
 
         return (
-          <section className="menu-page__section" key={category}>
+          <section key={category}>
             <div className="menu-page__section-heading">
               <h2 className="subsection-heading">{category}</h2>
               <span>{formatCount(items.length, menuCopy.count)}</span>
