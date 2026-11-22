@@ -1,6 +1,5 @@
 .about-page__content {
   align-items: start;
-  gap: clamp(1.5rem, 5vw, 3.5rem);
   --two-column-template: minmax(0, 0.95fr) minmax(0, 1.05fr);
 }
 

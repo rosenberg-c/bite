@@ -1,5 +1,4 @@
 .contact-page__content {
   align-items: start;
-  gap: var(--space-6);
   --two-column-template: minmax(0, 1.1fr) minmax(0, 0.9fr);
 }

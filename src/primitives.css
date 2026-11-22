@@ -7,9 +7,11 @@
   gap: var(--space-3);
 }
 
-/* Responsive two-column content layout; components provide the column template. */
+/* Responsive two-column content layout; components provide the column template
+   and may override the gap via --two-column-gap. */
 .two-column {
   display: grid;
+  gap: var(--two-column-gap, clamp(1.5rem, 5vw, 3.5rem));
   grid-template-columns: var(--two-column-template, 1fr);
 }
 
