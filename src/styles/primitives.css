@@ -41,6 +41,11 @@
   text-transform: uppercase;
   color: var(--color-caramel);
 }
+/* Shared background band for full-width content sections. */
+.surface-band {
+  background: var(--color-surface);
+}
+
 /* Shared card surface. */
 .surface-card {
   padding: var(--space-6);
@@ -97,7 +102,7 @@
 /* Shared lead paragraph typography. */
 .lead-copy {
   font-size: clamp(1.05rem, 2vw, 1.25rem);
-  color: rgb(var(--color-espresso-rgb) / 82%);
+  color: var(--color-text-muted);
 }
 
 /* Shared body copy column. */
@@ -107,7 +112,7 @@
   align-items: flex-start;
   gap: var(--space-4);
   font-size: 1.05rem;
-  color: rgb(var(--color-espresso-rgb) / 82%);
+  color: var(--color-text-muted);
 }
 
 /* Shared spacing for a button link at the end of a body copy column. */
@@ -124,5 +129,5 @@
 /* Shared card description text. */
 .card-copy {
   font-size: 0.94rem;
-  color: rgb(var(--color-espresso-rgb) / 76%);
+  color: var(--color-text-subtle);
 }

@@ -31,7 +31,7 @@
 
 .contact-page__row dd span {
   font-size: 0.86rem;
-  color: rgb(var(--color-espresso-rgb) / 76%);
+  color: var(--color-text-subtle);
 }
 
 @media (max-width: 30rem) {

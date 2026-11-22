@@ -21,4 +21,4 @@ vp run build   # type-check and build for production
 vp preview     # preview the build locally
 ```
 
-Menu items live in `src/data/menu.json`; page copy lives in `src/pages/*/*.content.ts`. Vercel rewrites routes to `index.html` for client-side navigation.
+Menu items live in `src/pages/Menu/data/menu.json`; page copy lives in `src/pages/*/*.content.ts`. Vercel rewrites routes to `index.html` for client-side navigation.

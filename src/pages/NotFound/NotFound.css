@@ -7,10 +7,6 @@
   text-align: center;
 }
 
-.not-found__eyebrow {
-  font-size: 0.78rem;
-}
-
 .not-found__title {
   max-width: 22rem;
   font-size: clamp(2.5rem, 7vw, 4.25rem);
@@ -19,7 +15,7 @@
 
 .not-found__body {
   max-width: 28rem;
-  color: rgb(var(--color-espresso-rgb) / 82%);
+  color: var(--color-text-muted);
 }
 
 .not-found .button-link {

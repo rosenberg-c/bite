@@ -6,7 +6,7 @@ import "./Story.css";
 export const Story = () => {
   return (
     <section
-      className="home-story section-rhythm"
+      className="home-story section-rhythm surface-band"
       aria-labelledby="home-story-title"
     >
       <div className="home-story__inner container two-column">
