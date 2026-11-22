@@ -24,6 +24,11 @@
 .page-content {
   padding-block: clamp(1rem, 3vw, 2rem) clamp(3.5rem, 8vw, 6rem);
 }
+
+/* Align two-column page content to the top of each column. */
+.two-column.page-content {
+  align-items: start;
+}
 /* Shared vertical rhythm for content sections. */
 .section-rhythm {
   padding-block: clamp(3rem, 8vw, 6rem);
@@ -79,6 +84,11 @@
   margin-top: var(--space-3);
 }
 
+/* Shared spacing for a three-column grid directly after a section heading. */
+.section-heading + .three-column-grid {
+  margin-top: var(--space-8);
+}
+
 /* Shared opt-in heading for category and card subsections. */
 .subsection-heading {
   font-size: clamp(1.6rem, 4vw, 2.25rem);
@@ -98,6 +108,11 @@
   gap: var(--space-4);
   font-size: 1.05rem;
   color: rgb(var(--color-espresso-rgb) / 82%);
+}
+
+/* Shared spacing for a button link at the end of a body copy column. */
+.body-copy > .button-link {
+  margin-top: var(--space-2);
 }
 
 /* Shared card heading typography and spacing. */

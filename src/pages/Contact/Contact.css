@@ -1,4 +1,3 @@
 .contact-page__content {
-  align-items: start;
   --two-column-template: minmax(0, 1.1fr) minmax(0, 0.9fr);
 }

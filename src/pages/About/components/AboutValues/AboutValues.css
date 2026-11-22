@@ -2,10 +2,6 @@
   background: var(--color-surface);
 }
 
-.about-page__values-grid {
-  margin-top: var(--space-8);
-}
-
 /* Two classes keep the accent above the shared .surface-card border shorthand. */
 .about-page__values-grid .about-page__value {
   border-top: 3px solid var(--color-dusty-pink);

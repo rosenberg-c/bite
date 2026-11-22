@@ -1,5 +1,4 @@
 import { home } from "../../Home.content";
-import "./Values.css";
 
 export const Values = () => {
   return (
